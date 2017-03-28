@@ -1,1 +1,17 @@
 /* Put your custom styles here */
+.aqua{
+ color: #32c5d2;
+}
+
+.us{
+  max-width: 100%;
+}
+.content h4{
+ 0.9 em;
+}
+.content-right .image-container .background-image-holder.evo{
+  background: url(../images/evo2.jpg) no-repeat center center;
+}
+.background-image-holder.evo{
+    background: url(../images/testevo.jpg) no-repeat center center;
+}

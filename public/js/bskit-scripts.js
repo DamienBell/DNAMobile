@@ -3,10 +3,10 @@
 "use strict";
 
 $(document).ready(function() {
-	var foo = initMaps();
-	
+	//var foo = initMaps();
+
 	//Gallery
-	var foo =  $('.gallery-zoom').magnificPopup({ 
+	var foo =  $('.gallery-zoom').magnificPopup({
 		type: 'image'
 		// other options
 	});
@@ -18,7 +18,7 @@ $(".quote-carousel").owlCarousel({
 	slideSpeed : 300,
 	autoPlay : true,
 	paginationSpeed : 400,
-	singleItem : true,		
+	singleItem : true,
 });
 // End Owl Carousel
 
@@ -43,7 +43,7 @@ function count(elem){
     var dateOfBeginning = new Date(),
         dateOfEnd = $e.closest('[data-end-date]').attr('data-end-date') || new Date((new Date()).getTime() + 3*30*24*3600*1000);
 
-    countDown(dateOfBeginning, dateOfEnd); 
+    countDown(dateOfBeginning, dateOfEnd);
 
 }
 
@@ -107,12 +107,12 @@ function initMap(elem) {
         mapTypeId: google.maps.MapTypeId.ROADMAP,
 		styles: [{stylers:[{saturation:-100},{gamma:1}]},{elementType:"labels.text.stroke",stylers:[{visibility:"off"}]},{featureType:"poi.business",elementType:"labels.text",stylers:[{visibility:"off"}]},{featureType:"poi.business",elementType:"labels.icon",stylers:[{visibility:"off"}]},{featureType:"poi.place_of_worship",elementType:"labels.text",stylers:[{visibility:"off"}]},{featureType:"poi.place_of_worship",elementType:"labels.icon",stylers:[{visibility:"off"}]},{featureType:"road",elementType:"geometry",stylers:[{visibility:"simplified"}]},{featureType:"water",stylers:[{visibility:"on"},{saturation:50},{gamma:0},{hue:"#50a5d1"}]},{featureType:"administrative.neighborhood",elementType:"labels.text.fill",stylers:[{color:"#333333"}]},{featureType:"road.local",elementType:"labels.text",stylers:[{weight:0.5},{color:"#333333"}]},{featureType:"transit.station",elementType:"labels.icon",stylers:[{gamma:1},{saturation:50}]}]
 		}
-                    
+
     var map = new google.maps.Map($e.get(0), mapOptions);
     var marker = new google.maps.Marker({
     	icon: marker_image,
         map: map,
-        position: map.getCenter() 
+        position: map.getCenter()
     });
 }
 
