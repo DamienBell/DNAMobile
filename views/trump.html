@@ -71,7 +71,7 @@
         for (var key of Object.keys( categories)) {
                 let category = categories[ key];
                 let count = category.count;
-                children.push( { id: key, value: count});
+                children.push( { id: key, value: count, percentage: category.percent_overall, total: category.total });
                 i = i+1;
         }
         var data = { "name": "rect", "children": children};
@@ -83,7 +83,7 @@
             svg = svg.attr( "width", width)
                 .attr( "height", height);
             
-            //alert( width + " x " + height);
+            let color = d3.scaleOrdinal( d3.schemeCategory20c);
             
             var treemap = d3.treemap()
             .tile( d3.treemapResquarify)
@@ -108,7 +108,8 @@
             .style("top", function(d) { return d.y0 + "px"; })
             .style("width", function(d) { return d.x1 - d.x0 + "px"; })
             .style("height", function(d) { return d.y1 - d.y0 + "px"; })
-            .style("background", "#123456")
+            // color via d.data.total
+            .style("background", function(d) { return color( d.data.total); })
             // text
             .append( "div")
             .attr("class", "text-node")
