@@ -53,9 +53,9 @@ var $container = $('.isotope-gallery-container');
 var $filter = $('.filter');
 $(window).on('load', function () {
     // Initialize Isotope
-    $container.isotope({
-        itemSelector: '.gallery-item-wrapper'
-    });
+    // $container.isotope({
+    //     itemSelector: '.gallery-item-wrapper'
+    // });
     $('.filter a').on('click', function () {
         var selector = $(this).attr('data-filter');
         var $iso_container = $(this).closest('.content-block,body').find('.isotope-gallery-container');

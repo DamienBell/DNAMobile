@@ -15,3 +15,14 @@
 .background-image-holder.evo{
     background: url(../images/testevo.jpg) no-repeat center center;
 }
+.portfolio-section .underlined-title hr{
+  margin: 15px 40% 0px 40%;
+}
+.portfolio-section .gallery-item img{
+  width: auto;
+  margin: auto;
+  max-height: 420px;
+}
+.portfolio-section .gallery-item h5{
+  text-align: center;
+}
