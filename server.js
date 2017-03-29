@@ -23,6 +23,10 @@ app.get("/test", function (request, response) {
 app.get("/demos/focus", function (request, response) {
   response.sendFile(__dirname + '/views/focus.html');
 });
+// could also use the POST body instead of query string: http://expressjs.com/en/api.html#req.body
+app.get("/trump", function (request, response) {
+    response.sendFile(__dirname + '/views/trump.html');
+});
 
 
 // listen for requests :)

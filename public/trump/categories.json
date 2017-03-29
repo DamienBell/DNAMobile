@@ -1,0 +1,2668 @@
+var categories = {
+    "Morals": {
+        "count": 8,
+        "total": 11.000319734779493,
+        "percent_overall": 0.0880669785079949,
+        "related": [
+                    {
+                    "leadup": {
+                    "start": "53.89002916833486",
+                    "stop": ""
+                    },
+                    "applause": {
+                    "start": "74.89002916833486",
+                    "stop": "83.78948868358357",
+                    "duration": 8.899459515248708
+                    },
+                    "category": "Morals",
+                    "quote": "We are reminded of our Nation's path toward civil rights and the work that still remains to be done.",
+                    "objectId": "We50LMavDK",
+                    "clip": "We50LMavDK-clip.mp3",
+                    "applause-clip": "We50LMavDK-applause.mp3",
+                    "median": -26.35787443612363,
+                    "supporting": [
+                                   {
+                                   "title": "America's Moral Divide",
+                                   "url": "https://www.theatlantic.com/science/archive/2016/12/the-psychology-of-moral-divides/510569/"
+                                   }
+                                   ],
+                    "score": 0.5831686309247225
+                    },
+                    {
+                    "leadup": {
+                    "start": "95.46851512376453",
+                    "stop": "107.5"
+                    },
+                    "applause": {
+                    "start": "107.5",
+                    "stop": "123.25405123140219",
+                    "duration": 15.754051231402187
+                    },
+                    "category": "Morals",
+                    "quote": "While we may be a Nation divided on policies, we are a country that stands united in condemning hate and evil in all its very ugly forms.",
+                    "objectId": "HjV4cKyTwd",
+                    "clip": "HjV4cKyTwd-clip.mp3",
+                    "applause-clip": "HjV4cKyTwd-applause.mp3",
+                    "median": -26.014770683012387,
+                    "supporting": [
+                                   {
+                                   "title": "America's Moral Divide",
+                                   "url": "https://www.theatlantic.com/science/archive/2016/12/the-psychology-of-moral-divides/510569/"
+                                   }
+                                   ],
+                    "score": 1.2064805218892265
+                    },
+                    {
+                    "leadup": {
+                    "start": "140.2332591267585",
+                    "stop": "147"
+                    },
+                    "applause": {
+                    "start": "147",
+                    "stop": "158.16704893161187",
+                    "duration": 11.167048931611873
+                    },
+                    "category": "Morals",
+                    "quote": "I am here tonight to deliver a message of unity and strength, and it is a message deeply delivered from my heart.\\n\\nA new chapter",
+                    "objectId": "sVBdjWdJtH",
+                    "clip": "sVBdjWdJtH-clip.mp3",
+                    "applause-clip": "sVBdjWdJtH-applause.mp3",
+                    "median": -31.321198566296097,
+                    "supporting": [
+                                   {
+                                   "title": "America's Moral Divide",
+                                   "url": "https://www.theatlantic.com/science/archive/2016/12/the-psychology-of-moral-divides/510569/"
+                                   }
+                                   ],
+                    "score": 0.6517554194549073
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "2521.469402539314",
+                    "stop": "2531.8429648599226",
+                    "duration": 10.373562320608471
+                    },
+                    "category": "Morals",
+                    "quote": "In Chicago...the murder rate so far this year has been even higher.\nThis is not acceptable in our society.",
+                    "objectId": "qPs4dnkOVg",
+                    "clip": "qPs4dnkOVg-clip.mp3",
+                    "applause-clip": "qPs4dnkOVg-applause.mp3",
+                    "median": -27.17801567255873,
+                    "supporting": [
+                                   {
+                                   "title": "America's Moral Divide",
+                                   "url": "https://www.theatlantic.com/science/archive/2016/12/the-psychology-of-moral-divides/510569/"
+                                   }
+                                   ],
+                    "score": 0.6850024987594588
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "2541.781105449492",
+                    "stop": "2546.8953004608297",
+                    "duration": 5.11419501133787
+                    },
+                    "category": "Morals",
+                    "quote": "Every American child should be able to grow up in a safe community, to attend a great school, and to have access to a high-paying job.",
+                    "objectId": "hos0U0dlIN",
+                    "clip": "hos0U0dlIN-clip.mp3",
+                    "applause-clip": "hos0U0dlIN-applause.mp3",
+                    "median": -28.405611670559253,
+                    "supporting": [
+                                   {
+                                   "title": "America's Moral Divide",
+                                   "url": "https://www.theatlantic.com/science/archive/2016/12/the-psychology-of-moral-divides/510569/"
+                                   }
+                                   ],
+                    "score": 0.2707493731184234
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "3338.298681059471",
+                    "stop": "3343.847174865284",
+                    "duration": 5.548493805812996
+                    },
+                    "category": "Morals",
+                    "quote": "...create the conditions where displaced persons can safely return home and begin the long, long process of rebuilding.",
+                    "objectId": "mPl5pBEjTf",
+                    "clip": "mPl5pBEjTf-clip.mp3",
+                    "applause-clip": "mPl5pBEjTf-applause.mp3",
+                    "median": -28.45809525606216,
+                    "supporting": [
+                                   {
+                                   "title": "America's Moral Divide",
+                                   "url": "https://www.theatlantic.com/science/archive/2016/12/the-psychology-of-moral-divides/510569/"
+                                   }
+                                   ],
+                    "score": 0.29923545737446433
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "3517.9941746896293",
+                    "stop": "3536.916404770178",
+                    "duration": 18.922230080548616
+                    },
+                    "category": "Morals, Nationalism",
+                    "quote": "We all salute the great American flag and we all are made by the same God.",
+                    "objectId": "ptk7NWQ0KX",
+                    "clip": "ptk7NWQ0KX-clip.mp3",
+                    "applause-clip": "ptk7NWQ0KX-applause.mp3",
+                    "median": -26.86277932875527,
+                    "supporting": [
+                    
+                    ],
+                    "score": 1.4691442988254075
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "3624.81600786732",
+                    "stop": "3681.123763895138",
+                    "duration": 56.30775602781796
+                    },
+                    "category": "Morals, Nationalism",
+                    "quote": "...asking Congress to join me...and everyone watching tonite...to seize this moment....believe in yourselves...believe in the future....believe in America.",
+                    "objectId": "qyF0mIoDiN",
+                    "clip": "qyF0mIoDiN-clip.mp3",
+                    "applause-clip": "qyF0mIoDiN-applause.mp3",
+                    "median": -26.435378108368724,
+                    "supporting": [
+                    
+                    ],
+                    "score": 5.834783534432883
+                    }
+                    ]
+    },
+    "Nationalism": {
+        "count": 18,
+        "total": 35.95652692958217,
+        "percent_overall": 0.28786278587138975,
+        "related": [
+                    {
+                    "leadup": {
+                    "start": "174",
+                    "stop": "184.5"
+                    },
+                    "applause": {
+                    "start": "184.5",
+                    "stop": "201.77340346016658",
+                    "duration": 17.273403460166577
+                    },
+                    "category": "Nationalism",
+                    "quote": "What we are witnessing today is the Renewal of the American Spirit.\\nOur allies will find that America is once again ready to lead.",
+                    "objectId": "gz1QnjyHHr",
+                    "clip": "gz1QnjyHHr-clip.mp3",
+                    "applause-clip": "gz1QnjyHHr-applause.mp3",
+                    "median": -25.9382885948638,
+                    "supporting": [
+                    
+                    ],
+                    "score": 1.3576289127595642
+                    },
+                    {
+                    "leadup": {
+                    "start": "336.5",
+                    "stop": "358"
+                    },
+                    "applause": {
+                    "start": "358",
+                    "stop": "377",
+                    "duration": 19.0
+                    },
+                    "category": "Nationalism",
+                    "quote": "...the people turned out by the tens of millions, and they were all united by one very simple, but crucial demand- that America must put its own citizens first ... because only then, can we truly MAKE AMERICA GREAT AGAIN.",
+                    "objectId": "X7qY0B24G0",
+                    "clip": "X7qY0B24G0-clip.mp3",
+                    "applause-clip": "X7qY0B24G0-applause.mp3",
+                    "median": -25.700020271628876,
+                    "supporting": [
+                    
+                    ],
+                    "score": 1.5435067579482826
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "1658.5",
+                    "stop": "1675.6857391892008",
+                    "duration": 17.18573918920083
+                    },
+                    "category": "Nationalism Bipartisanship",
+                    "quote": "If we are guided by the well-being of American citizens then I believe Republicans and Democrats can work together to achieve an outcome that has eluded our country for decades.",
+                    "objectId": "Edo8iTQFX9",
+                    "clip": "Edo8iTQFX9-clip.mp3",
+                    "applause-clip": "Edo8iTQFX9-applause.mp3",
+                    "median": -27.380235993478866,
+                    "supporting": [
+                    
+                    ],
+                    "score": 1.2779771352325586
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "1783.4475893094877",
+                    "stop": "1788.3150048729906",
+                    "duration": 4.8674155635028455
+                    },
+                    "category": "Nationalism Economy",
+                    "quote": "Buy American, and Hire American.",
+                    "objectId": "WvB4Khh0cY",
+                    "clip": "WvB4Khh0cY-clip.mp3",
+                    "applause-clip": "WvB4Khh0cY-applause.mp3",
+                    "median": -27.80588210758375,
+                    "supporting": [
+                                   {
+                                   "title": "Economy",
+                                   "url": "https://en.wikipedia.org/wiki/Economy_of_the_United_States"
+                                   }
+                                   ],
+                    "score": 0.26000778762265925
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "1956.1364749819538",
+                    "stop": "1963.0880194884505",
+                    "duration": 6.9515445064967025
+                    },
+                    "category": "Healthcare Bipartisanship Nationalism",
+                    "quote": "So I am calling on all Democrats and Republicans in the Congress to work with us to save Americans from this imploding Obamacare disaster.",
+                    "objectId": "5IkcEB5j0m",
+                    "clip": "5IkcEB5j0m-clip.mp3",
+                    "applause-clip": "5IkcEB5j0m-applause.mp3",
+                    "median": -28.191985211491485,
+                    "supporting": [
+                    
+                    ],
+                    "score": 0.40038331924242093
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "2128.1299645743775",
+                    "stop": "2146.0420780748445",
+                    "duration": 17.912113500467058
+                    },
+                    "category": "Nationalism Bipartisanship",
+                    "quote": "Every problem can be solved...our citizens deserve this and so much more. So why not join forces and get the job done?",
+                    "objectId": "AxzNwXJHIp",
+                    "clip": "AxzNwXJHIp-clip.mp3",
+                    "applause-clip": "AxzNwXJHIp-applause.mp3",
+                    "median": -26.956745244643756,
+                    "supporting": [
+                    
+                    ],
+                    "score": 1.3669923566387951
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "2156.0650501794967",
+                    "stop": "2162.5840524470705",
+                    "duration": 6.519002267573796
+                    },
+                    "category": "Nationalism Bipartisanship",
+                    "quote": "Democrats and Republicans should get together and unite for the good of our country, and for the good of the American people.",
+                    "objectId": "oIEq8HtNGG",
+                    "clip": "oIEq8HtNGG-clip.mp3",
+                    "applause-clip": "oIEq8HtNGG-applause.mp3",
+                    "median": -27.40507057691072,
+                    "supporting": [
+                    
+                    ],
+                    "score": 0.38009791758654293
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "2555.782738102553",
+                    "stop": "2571.9987747950327",
+                    "duration": 16.21603669247952
+                    },
+                    "category": "Nationalism",
+                    "quote": "...we must work with, not against - not against, the men and women of law enforcement.",
+                    "objectId": "zcdirnY0f3",
+                    "clip": "zcdirnY0f3-clip.mp3",
+                    "applause-clip": "zcdirnY0f3-applause.mp3",
+                    "median": -26.740971868519253,
+                    "supporting": [
+                    
+                    ],
+                    "score": 1.2168966929034228
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "2607.5558978161803",
+                    "stop": "2622.4566040226446",
+                    "duration": 14.900706206464292
+                    },
+                    "category": "Nationalism",
+                    "quote": "We must support the incredible men and women of law enforcement.",
+                    "objectId": "Vre3oCrE4J",
+                    "clip": "Vre3oCrE4J-clip.mp3",
+                    "applause-clip": "Vre3oCrE4J-applause.mp3",
+                    "median": -26.821986749606754,
+                    "supporting": [
+                    
+                    ],
+                    "score": 1.0914846219754037
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "2771.549954357468",
+                    "stop": "2792.992225996738",
+                    "duration": 21.442271639270075
+                    },
+                    "category": "Nationalism, Guest",
+                    "quote": "I want you to know that your father was a hero, and that tonight you have the love of an entire country supporting you and praying for you.",
+                    "objectId": "MFmkl4AMY4",
+                    "clip": "MFmkl4AMY4-clip.mp3",
+                    "applause-clip": "MFmkl4AMY4-applause.mp3",
+                    "median": -27.251006771319407,
+                    "supporting": [
+                    
+                    ],
+                    "score": 1.6931909567525598
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "2884.9577691267305",
+                    "stop": "2898",
+                    "duration": 13.042230873269546
+                    },
+                    "category": "Nationalism",
+                    "quote": "Our veterans have delivered for this Nation --- and now we must deliver for them.",
+                    "objectId": "uEmwqbG7qi",
+                    "clip": "uEmwqbG7qi-clip.mp3",
+                    "applause-clip": "uEmwqbG7qi-applause.mp3",
+                    "median": -26.620848990947955,
+                    "supporting": [
+                    
+                    ],
+                    "score": 0.9310391704650143
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "2909.703916992629",
+                    "stop": "2929.0164828251227",
+                    "duration": 19.312565832493874
+                    },
+                    "category": "Nationalism",
+                    "quote": "...none are greater or braver than those who fight for America in uniform.",
+                    "objectId": "3HNX9IGG5U",
+                    "clip": "3HNX9IGG5U-clip.mp3",
+                    "applause-clip": "3HNX9IGG5U-applause.mp3",
+                    "median": -27.29386990198818,
+                    "supporting": [
+                    
+                    ],
+                    "score": 1.4833200064530436
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "3004.0091894305683",
+                    "stop": "3104.1455515543535",
+                    "duration": 100.13636212378515
+                    },
+                    "category": "Nationalism",
+                    "quote": "Ryan was a part of a highly successful raid that generated vital amounts of large intelligence that will lead to many more victories in the future against our enemies. \n\nRyan's legacy is etched into eternity. Thank you.",
+                    "objectId": "RUEVHHFkRg",
+                    "clip": "RUEVHHFkRg-clip.mp3",
+                    "applause-clip": "RUEVHHFkRg-applause.mp3",
+                    "median": -27.63183619512766,
+                    "supporting": [
+                    
+                    ],
+                    "score": 11.463837373960677
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "3138.407981725142",
+                    "stop": "3160.901046744167",
+                    "duration": 22.49306501902538
+                    },
+                    "category": "Nationalism",
+                    "quote": "Ryan laid down his life for his friends, for his country, and for our freedom --- we will never forget Ryan.",
+                    "objectId": "PWFrQb5fuJ",
+                    "clip": "PWFrQb5fuJ-clip.mp3",
+                    "applause-clip": "PWFrQb5fuJ-applause.mp3",
+                    "median": -27.74747844582005,
+                    "supporting": [
+                    
+                    ],
+                    "score": 1.7653762335581409
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "3288.1797897057077",
+                    "stop": "3305.3905884006167",
+                    "duration": 17.210798694909045
+                    },
+                    "category": "Nationalism",
+                    "quote": "My job is not to represent the world. My job is to represent the United States of America.",
+                    "objectId": "VAUApx9yQ4",
+                    "clip": "VAUApx9yQ4-clip.mp3",
+                    "applause-clip": "VAUApx9yQ4-applause.mp3",
+                    "median": -26.56987198988611,
+                    "supporting": [
+                    
+                    ],
+                    "score": 1.3193554613322744
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "3473.863244637673",
+                    "stop": "3488.8915406944047",
+                    "duration": 15.02829605673196
+                    },
+                    "category": "Economy, Nationalism",
+                    "quote": "American footprints on distant worlds...millions lifted from welfare...schools...and jobs...are not too much to ask.",
+                    "objectId": "azV6UX0Zfk",
+                    "clip": "azV6UX0Zfk-clip.mp3",
+                    "applause-clip": "azV6UX0Zfk-applause.mp3",
+                    "median": -26.86277932875527,
+                    "supporting": [
+                    
+                    ],
+                    "score": 1.1015043918925198
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "3517.9941746896293",
+                    "stop": "3536.916404770178",
+                    "duration": 18.922230080548616
+                    },
+                    "category": "Morals, Nationalism",
+                    "quote": "We all salute the great American flag and we all are made by the same God.",
+                    "objectId": "ptk7NWQ0KX",
+                    "clip": "ptk7NWQ0KX-clip.mp3",
+                    "applause-clip": "ptk7NWQ0KX-applause.mp3",
+                    "median": -26.86277932875527,
+                    "supporting": [
+                    
+                    ],
+                    "score": 1.4691442988254075
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "3624.81600786732",
+                    "stop": "3681.123763895138",
+                    "duration": 56.30775602781796
+                    },
+                    "category": "Morals, Nationalism",
+                    "quote": "...asking Congress to join me...and everyone watching tonite...to seize this moment....believe in yourselves...believe in the future....believe in America.",
+                    "objectId": "qyF0mIoDiN",
+                    "clip": "qyF0mIoDiN-clip.mp3",
+                    "applause-clip": "qyF0mIoDiN-applause.mp3",
+                    "median": -26.435378108368724,
+                    "supporting": [
+                    
+                    ],
+                    "score": 5.834783534432883
+                    }
+                    ]
+    },
+    "Education": {
+        "count": 5,
+        "total": 4.157496735739118,
+        "percent_overall": 0.03328432122893519,
+        "related": [
+                    {
+                    "leadup": {
+                    "start": "407",
+                    "stop": "420"
+                    },
+                    "applause": {
+                    "start": "420",
+                    "stop": "430",
+                    "duration": 10.0
+                    },
+                    "category": "Education",
+                    "quote": "And our neglected inner cities will see a rebirth of hope, safety, and opportunity.\\nAbove all else, we will keep our promises to the American people.",
+                    "objectId": "c7noTn5sPq",
+                    "clip": "c7noTn5sPq-clip.mp3",
+                    "applause-clip": "c7noTn5sPq-applause.mp3",
+                    "median": -26.637908026817122,
+                    "supporting": [
+                    
+                    ],
+                    "score": 0.6675747240544113
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "2383.7468002204528",
+                    "stop": "2390.7870742758437",
+                    "duration": 7.04027405539091
+                    },
+                    "category": "Education",
+                    "quote": "Education is the civil rights issue of our time.",
+                    "objectId": "K1d8F8W1JD",
+                    "clip": "K1d8F8W1JD-clip.mp3",
+                    "applause-clip": "K1d8F8W1JD-applause.mp3",
+                    "median": -28.287811601032043,
+                    "supporting": [
+                    
+                    ],
+                    "score": 0.4054036043184175
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "2403.755418947045",
+                    "stop": "2416.9071228674566",
+                    "duration": 13.151703920411364
+                    },
+                    "category": "Education",
+                    "quote": "I am calling upon...both parties to pass an education bill...for disadvantaged youth, including millions of African-American and Latino children. ",
+                    "objectId": "iOPOWi0TGf",
+                    "clip": "iOPOWi0TGf-clip.mp3",
+                    "applause-clip": "iOPOWi0TGf-applause.mp3",
+                    "median": -27.093627461971792,
+                    "supporting": [
+                    
+                    ],
+                    "score": 0.9244009306500239
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "2425.7771455431935",
+                    "stop": "2432.4977597038387",
+                    "duration": 6.720614160645255
+                    },
+                    "category": "Education",
+                    "quote": "These families should be free to choose the public, private, charter, magnet, religious or home school that is right for them.",
+                    "objectId": "RmUUxgjTvB",
+                    "clip": "RmUUxgjTvB-clip.mp3",
+                    "applause-clip": "RmUUxgjTvB-applause.mp3",
+                    "median": -28.010110384942664,
+                    "supporting": [
+                    
+                    ],
+                    "score": 0.3863192800473251
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "2471.570372082839",
+                    "stop": "2493.922007341563",
+                    "duration": 22.351635258723945
+                    },
+                    "category": "Education",
+                    "quote": "We want all children to be able to break the cycle of poverty just like Denisha.\n",
+                    "objectId": "FPoYKFhguA",
+                    "clip": "FPoYKFhguA-clip.mp3",
+                    "applause-clip": "FPoYKFhguA-applause.mp3",
+                    "median": -27.398855271001104,
+                    "supporting": [
+                    
+                    ],
+                    "score": 1.7737981966689398
+                    }
+                    ]
+    },
+    "Economy": {
+        "count": 17,
+        "total": 13.816722334147515,
+        "percent_overall": 0.11061469286253374,
+        "related": [
+                    {
+                    "leadup": {
+                    "start": "441.1296234548857",
+                    "stop": "463"
+                    },
+                    "applause": {
+                    "start": "463",
+                    "stop": "480",
+                    "duration": 17.0
+                    },
+                    "category": "Economy",
+                    "quote": "Since my election, Ford, Fiat-Chrysler, General Motors, Sprint, Softbank, Lockheed, Intel, Walmart, and many others, have announced that they will invest billions of dollars in the United States and will create tens of thousands of new American jobs.",
+                    "objectId": "wUGQ7whfBB",
+                    "clip": "wUGQ7whfBB-clip.mp3",
+                    "applause-clip": "wUGQ7whfBB-applause.mp3",
+                    "median": -26.129428353669283,
+                    "supporting": [
+                                   {
+                                   "title": "Economy",
+                                   "url": "https://en.wikipedia.org/wiki/Economy_of_the_United_States"
+                                   }
+                                   ],
+                    "score": 1.3210864652507555
+                    },
+                    {
+                    "leadup": {
+                    "start": "582.5",
+                    "stop": "593"
+                    },
+                    "applause": {
+                    "start": "593",
+                    "stop": "610.0820478112691",
+                    "duration": 17.08204781126915
+                    },
+                    "category": "Economy Regulations",
+                    "quote": "We're going to stop the regulations that threaten the future and livelihoods of our great coal miners.",
+                    "objectId": "Kn4Ge5XNZJ",
+                    "clip": "Kn4Ge5XNZJ-clip.mp3",
+                    "applause-clip": "Kn4Ge5XNZJ-applause.mp3",
+                    "median": -26.804562692333306,
+                    "supporting": [
+                                   {
+                                   "title": "Economy",
+                                   "url": "https://en.wikipedia.org/wiki/Economy_of_the_United_States"
+                                   }
+                                   ],
+                    "score": 1.2955858320484894
+                    },
+                    {
+                    "leadup": {
+                    "start": "610.0554946280066",
+                    "stop": "616"
+                    },
+                    "applause": {
+                    "start": "616",
+                    "stop": "628.5693517763152",
+                    "duration": 12.569351776315216
+                    },
+                    "category": "Economy, Environment",
+                    "quote": "We have cleared the way for the construction of the Keystone and Dakota Access Pipelines",
+                    "objectId": "4RXUSpfgF7",
+                    "clip": "4RXUSpfgF7-clip.mp3",
+                    "applause-clip": "4RXUSpfgF7-applause.mp3",
+                    "median": -26.752499261900724,
+                    "supporting": [
+                                   {
+                                   "title": "EPA",
+                                   "url": "https://en.wikipedia.org/wiki/United_States_Environmental_Protection_Agency"
+                                   }
+                                   ],
+                    "score": 0.8846607116722947
+                    },
+                    {
+                    "leadup": {
+                    "start": "632",
+                    "stop": "640"
+                    },
+                    "applause": {
+                    "start": "640.25",
+                    "stop": "656.3476091017476",
+                    "duration": 16.097609101747594
+                    },
+                    "category": "Economy",
+                    "quote": "and I've issued a new directive that new American pipelines be made with American steel.",
+                    "objectId": "89TwhSKLHn",
+                    "clip": "89TwhSKLHn-clip.mp3",
+                    "applause-clip": "89TwhSKLHn-applause.mp3",
+                    "median": -26.491164360750965,
+                    "supporting": [
+                                   {
+                                   "title": "Economy",
+                                   "url": "https://en.wikipedia.org/wiki/Economy_of_the_United_States"
+                                   }
+                                   ],
+                    "score": 1.2171684157376266
+                    },
+                    {
+                    "leadup": {
+                    "start": "656.1519402106268",
+                    "stop": "661"
+                    },
+                    "applause": {
+                    "start": "661",
+                    "stop": "666",
+                    "duration": 5.0
+                    },
+                    "category": "Economy",
+                    "quote": "We have withdrawn the United States from the job-killing Trans-Pacific Partnership.\\n",
+                    "objectId": "CFxeBtY194",
+                    "clip": "CFxeBtY194-clip.mp3",
+                    "applause-clip": "CFxeBtY194-applause.mp3",
+                    "median": -29.9266728902529,
+                    "supporting": [
+                                   {
+                                   "title": "Economy",
+                                   "url": "https://en.wikipedia.org/wiki/Economy_of_the_United_States"
+                                   }
+                                   ],
+                    "score": 0.24983545392850118
+                    },
+                    {
+                    "leadup": {
+                    "start": "670.5",
+                    "stop": "687"
+                    },
+                    "applause": {
+                    "start": "687",
+                    "stop": "704.3041910344675",
+                    "duration": 17.30419103446752
+                    },
+                    "category": "Economy",
+                    "quote": "...We have formed a Council with our neighbors in Canada to help ensure that women entrepreneurs have access to the network, market and capital they need to start a business and live out their financial dreams",
+                    "objectId": "PXJm0Ewr44",
+                    "clip": "PXJm0Ewr44-clip.mp3",
+                    "applause-clip": "PXJm0Ewr44-applause.mp3",
+                    "median": -26.74673365290172,
+                    "supporting": [
+                                   {
+                                   "title": "Economy",
+                                   "url": "https://en.wikipedia.org/wiki/Economy_of_the_United_States"
+                                   }
+                                   ],
+                    "score": 1.3195272798901252
+                    },
+                    {
+                    "leadup": {
+                    "start": "788.75",
+                    "stop": "801"
+                    },
+                    "applause": {
+                    "start": "801",
+                    "stop": "807",
+                    "duration": 6.0
+                    },
+                    "category": "Economy, Immigration",
+                    "quote": "By finally enforcing our immigration laws, we will raise wages, help the unemployed, save billions and billions of dollars, and make our communities safer for everyone.",
+                    "objectId": "eC6QHbbwsj",
+                    "clip": "eC6QHbbwsj-clip.mp3",
+                    "applause-clip": "eC6QHbbwsj-applause.mp3",
+                    "median": -28.09720449320938,
+                    "supporting": [
+                                   {
+                                   "title": "Immigration",
+                                   "url": "https://en.wikipedia.org/wiki/Immigration_to_the_United_States"
+                                   }
+                                   ],
+                    "score": 0.33421500999180365
+                    },
+                    {
+                    "leadup": {
+                    "start": "885",
+                    "stop": "897"
+                    },
+                    "applause": {
+                    "start": "897",
+                    "stop": "905",
+                    "duration": 8.0
+                    },
+                    "category": "Economy, Security",
+                    "quote": "...What would you say to the American family that loses their jobs, their income, or a loved one because America refused to uphold its laws and defend its borders?",
+                    "objectId": "F3u6gRbfRF",
+                    "clip": "F3u6gRbfRF-clip.mp3",
+                    "applause-clip": "F3u6gRbfRF-applause.mp3",
+                    "median": -27.802627746383113,
+                    "supporting": [
+                                   {
+                                   "title": "National Security",
+                                   "url": "https://en.wikipedia.org/wiki/National_security_of_the_United_States"
+                                   }
+                                   ],
+                    "score": 0.48392341784347087
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "1312",
+                    "stop": "1328",
+                    "duration": 16.0
+                    },
+                    "category": "Economy",
+                    "quote": "...we must restart the engine of the American economy making it easier for companies to business in the United States and much, much harder for companies to leave our country.",
+                    "objectId": "NJogVMBHA0",
+                    "clip": "NJogVMBHA0-clip.mp3",
+                    "applause-clip": "NJogVMBHA0-applause.mp3",
+                    "median": -27.111641757343023,
+                    "supporting": [
+                                   {
+                                   "title": "Economy",
+                                   "url": "https://en.wikipedia.org/wiki/Economy_of_the_United_States"
+                                   }
+                                   ],
+                    "score": 1.1803047667274889
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "1346",
+                    "stop": "1352",
+                    "duration": 6.0
+                    },
+                    "category": "Economy",
+                    "quote": "My economy team is developing historic tax reform that will reduce the tax rate on our companies so that they can compete and thrive anywhere and with anyone.",
+                    "objectId": "sy6bQClqQ5",
+                    "clip": "sy6bQClqQ5-clip.mp3",
+                    "applause-clip": "sy6bQClqQ5-applause.mp3",
+                    "median": -27.448704941897734,
+                    "supporting": [
+                                   {
+                                   "title": "Economy",
+                                   "url": "https://en.wikipedia.org/wiki/Economy_of_the_United_States"
+                                   }
+                                   ],
+                    "score": 0.34211113057308734
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "1367",
+                    "stop": "1373",
+                    "duration": 6.0
+                    },
+                    "category": "Economy",
+                    "quote": "At the same time, we will provide massive relief for the middle class. We must create a level playing field for American companies and our workers.",
+                    "objectId": "YapTsTvuNc",
+                    "clip": "YapTsTvuNc-clip.mp3",
+                    "applause-clip": "YapTsTvuNc-applause.mp3",
+                    "median": -27.473734093678598,
+                    "supporting": [
+                                   {
+                                   "title": "Economy",
+                                   "url": "https://en.wikipedia.org/wiki/Economy_of_the_United_States"
+                                   }
+                                   ],
+                    "score": 0.34179946011053425
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "1457",
+                    "stop": "1474",
+                    "duration": 17.0
+                    },
+                    "category": "Economy Trade",
+                    "quote": "It's very hard to do business with other countries, because they tax our goods at such a high rate. They said that in the case of another country, they taxed their motorcycles at 100%. They weren't even asking for a change, but I am.",
+                    "objectId": "yEzkvydESL",
+                    "clip": "yEzkvydESL-clip.mp3",
+                    "applause-clip": "yEzkvydESL-applause.mp3",
+                    "median": -26.810366828625504,
+                    "supporting": [
+                                   {
+                                   "title": "Economy",
+                                   "url": "https://en.wikipedia.org/wiki/Economy_of_the_United_States"
+                                   }
+                                   ],
+                    "score": 1.2875330786565569
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "1525",
+                    "stop": "1529",
+                    "duration": 4.0
+                    },
+                    "category": "Economy Trade",
+                    "quote": "They have taken advantage of our country no longer (regarding tariffs on products).",
+                    "objectId": "D9EAIDCGNB",
+                    "clip": "D9EAIDCGNB-clip.mp3",
+                    "applause-clip": "D9EAIDCGNB-applause.mp3",
+                    "median": -28.24661362828008,
+                    "supporting": [
+                                   {
+                                   "title": "Economy",
+                                   "url": "https://en.wikipedia.org/wiki/Economy_of_the_United_States"
+                                   }
+                                   ],
+                    "score": 0.20026663457558055
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "1754.3301707584048",
+                    "stop": "1775.43180586313",
+                    "duration": 21.10163510472512
+                    },
+                    "category": "Economy",
+                    "quote": "I will be asking the Congress to approve legislation that produces a $1 trillion investment in the infrastructure of the United States -- financed through both public and private capital --- creating millions of new jobs.",
+                    "objectId": "EqKM28DezJ",
+                    "clip": "EqKM28DezJ-clip.mp3",
+                    "applause-clip": "EqKM28DezJ-applause.mp3",
+                    "median": -27.349292285518256,
+                    "supporting": [
+                                   {
+                                   "title": "Economy",
+                                   "url": "https://en.wikipedia.org/wiki/Economy_of_the_United_States"
+                                   }
+                                   ],
+                    "score": 1.6536707450671415
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "1783.4475893094877",
+                    "stop": "1788.3150048729906",
+                    "duration": 4.8674155635028455
+                    },
+                    "category": "Nationalism Economy",
+                    "quote": "Buy American, and Hire American.",
+                    "objectId": "WvB4Khh0cY",
+                    "clip": "WvB4Khh0cY-clip.mp3",
+                    "applause-clip": "WvB4Khh0cY-applause.mp3",
+                    "median": -27.80588210758375,
+                    "supporting": [
+                                   {
+                                   "title": "Economy",
+                                   "url": "https://en.wikipedia.org/wiki/Economy_of_the_United_States"
+                                   }
+                                   ],
+                    "score": 0.26000778762265925
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "3432.4142095198913",
+                    "stop": "3438.5",
+                    "duration": 6.085790480108699
+                    },
+                    "category": "Economy",
+                    "quote": "Imagine the wonders our country could know in America's 250th year.\n",
+                    "objectId": "sHlpFqBJhl",
+                    "clip": "sHlpFqBJhl-clip.mp3",
+                    "applause-clip": "sHlpFqBJhl-applause.mp3",
+                    "median": -27.825437589700854,
+                    "supporting": [
+                                   {
+                                   "title": "Economy",
+                                   "url": "https://en.wikipedia.org/wiki/Economy_of_the_United_States"
+                                   }
+                                   ],
+                    "score": 0.3435217525588804
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "3473.863244637673",
+                    "stop": "3488.8915406944047",
+                    "duration": 15.02829605673196
+                    },
+                    "category": "Economy, Nationalism",
+                    "quote": "American footprints on distant worlds...millions lifted from welfare...schools...and jobs...are not too much to ask.",
+                    "objectId": "azV6UX0Zfk",
+                    "clip": "azV6UX0Zfk-clip.mp3",
+                    "applause-clip": "azV6UX0Zfk-applause.mp3",
+                    "median": -26.86277932875527,
+                    "supporting": [
+                    
+                    ],
+                    "score": 1.1015043918925198
+                    }
+                    ]
+    },
+    "Government": {
+        "count": 3,
+        "total": 3.6197133495450897,
+        "percent_overall": 0.028978904745070092,
+        "related": [
+                    {
+                    "leadup": {
+                    "start": "513",
+                    "stop": "525"
+                    },
+                    "applause": {
+                    "start": "525",
+                    "stop": "541.3264612209108",
+                    "duration": 16.3264612209108
+                    },
+                    "category": "Government",
+                    "quote": "have begun to drain the swamp of government corruption by imposing a 5 year ban on lobbying by executive branch officials",
+                    "objectId": "u3h2JzoPt3",
+                    "clip": "u3h2JzoPt3-clip.mp3",
+                    "applause-clip": "u3h2JzoPt3-applause.mp3",
+                    "median": -26.547311224895594,
+                    "supporting": [
+                                   {
+                                   "title": "Federal Government",
+                                   "url": "https://en.wikipedia.org/wiki/Federal_government_of_the_United_States"
+                                   }
+                                   ],
+                    "score": 1.2362164978056842
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "1121",
+                    "stop": "1137",
+                    "duration": 16.0
+                    },
+                    "category": "Government",
+                    "quote": "I have kept my promise to appoint a justice to the United States Supreme Court from my list of twenty judges who will defend our constitution.",
+                    "objectId": "lkQab1AoXb",
+                    "clip": "lkQab1AoXb-clip.mp3",
+                    "applause-clip": "lkQab1AoXb-applause.mp3",
+                    "median": -26.752499261900724,
+                    "supporting": [
+                                   {
+                                   "title": "Federal Government",
+                                   "url": "https://en.wikipedia.org/wiki/Federal_government_of_the_United_States"
+                                   }
+                                   ],
+                    "score": 1.1961499255350863
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "1193",
+                    "stop": "1209",
+                    "duration": 16.0
+                    },
+                    "category": "Government",
+                    "quote": "We have chosen judge, Neil Gorsidge... I am asking the Senate to swiftly approve his nomination.",
+                    "objectId": "Fatj4Fm8N1",
+                    "clip": "Fatj4Fm8N1-clip.mp3",
+                    "applause-clip": "Fatj4Fm8N1-applause.mp3",
+                    "median": -26.950842499164757,
+                    "supporting": [
+                                   {
+                                   "title": "Federal Government",
+                                   "url": "https://en.wikipedia.org/wiki/Federal_government_of_the_United_States"
+                                   }
+                                   ],
+                    "score": 1.187346926204319
+                    }
+                    ]
+    },
+    "Regulations": {
+        "count": 4,
+        "total": 3.2218041178645245,
+        "percent_overall": 0.025793300635423042,
+        "related": [
+                    {
+                    "leadup": {
+                    "start": "552.3492970124224",
+                    "stop": "558"
+                    },
+                    "applause": {
+                    "start": "558",
+                    "stop": "564.8199104277128",
+                    "duration": 6.819910427712784
+                    },
+                    "category": "Regulations",
+                    "quote": "creating a deregulation task force inside of every Government agency.",
+                    "objectId": "P8KfBh0W4l",
+                    "clip": "P8KfBh0W4l-clip.mp3",
+                    "applause-clip": "P8KfBh0W4l-applause.mp3",
+                    "median": -27.25406195598218,
+                    "supporting": [
+                    
+                    ],
+                    "score": 0.40438226410607553
+                    },
+                    {
+                    "leadup": {
+                    "start": "565.5506138437156",
+                    "stop": "576"
+                    },
+                    "applause": {
+                    "start": "576",
+                    "stop": "583.5579853370158",
+                    "duration": 7.5579853370157934
+                    },
+                    "category": "Regulations",
+                    "quote": "imposing a new rule which mandates that for every 1 new regulation, 2 old regulations must be eliminated;",
+                    "objectId": "C4EmpFTgvY",
+                    "clip": "C4EmpFTgvY-clip.mp3",
+                    "applause-clip": "C4EmpFTgvY-applause.mp3",
+                    "median": -26.600989497684754,
+                    "supporting": [
+                    
+                    ],
+                    "score": 0.47109637730169707
+                    },
+                    {
+                    "leadup": {
+                    "start": "582.5",
+                    "stop": "593"
+                    },
+                    "applause": {
+                    "start": "593",
+                    "stop": "610.0820478112691",
+                    "duration": 17.08204781126915
+                    },
+                    "category": "Economy Regulations",
+                    "quote": "We're going to stop the regulations that threaten the future and livelihoods of our great coal miners.",
+                    "objectId": "Kn4Ge5XNZJ",
+                    "clip": "Kn4Ge5XNZJ-clip.mp3",
+                    "applause-clip": "Kn4Ge5XNZJ-applause.mp3",
+                    "median": -26.804562692333306,
+                    "supporting": [
+                                   {
+                                   "title": "Economy",
+                                   "url": "https://en.wikipedia.org/wiki/Economy_of_the_United_States"
+                                   }
+                                   ],
+                    "score": 1.2955858320484894
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "2352.9219217523064",
+                    "stop": "2367.451856004281",
+                    "duration": 14.529934251974737
+                    },
+                    "category": "Regulations",
+                    "quote": "If we slash the restraints, not just at the FDA but across our Government, then we will be blessed with far more miracles like Megan.",
+                    "objectId": "f4tIL4M6rc",
+                    "clip": "f4tIL4M6rc-clip.mp3",
+                    "applause-clip": "f4tIL4M6rc-applause.mp3",
+                    "median": -26.9981771647469,
+                    "supporting": [
+                    
+                    ],
+                    "score": 1.0507396444082624
+                    }
+                    ]
+    },
+    "Environment": {
+        "count": 2,
+        "total": 1.685808273649187,
+        "percent_overall": 0.013496338705016648,
+        "related": [
+                    {
+                    "leadup": {
+                    "start": "610.0554946280066",
+                    "stop": "616"
+                    },
+                    "applause": {
+                    "start": "616",
+                    "stop": "628.5693517763152",
+                    "duration": 12.569351776315216
+                    },
+                    "category": "Economy, Environment",
+                    "quote": "We have cleared the way for the construction of the Keystone and Dakota Access Pipelines",
+                    "objectId": "4RXUSpfgF7",
+                    "clip": "4RXUSpfgF7-clip.mp3",
+                    "applause-clip": "4RXUSpfgF7-applause.mp3",
+                    "median": -26.752499261900724,
+                    "supporting": [
+                                   {
+                                   "title": "EPA",
+                                   "url": "https://en.wikipedia.org/wiki/United_States_Environmental_Protection_Agency"
+                                   }
+                                   ],
+                    "score": 0.8846607116722947
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "2199.7165960535044",
+                    "stop": "2211.476984282215",
+                    "duration": 11.76038822871078
+                    },
+                    "category": "Healthcare Environment Security",
+                    "quote": "to invest in women's health, and to promote clean air and clear water, and to rebuild our military and our infrastructure.",
+                    "objectId": "ovumm2f9Pu",
+                    "clip": "ovumm2f9Pu-clip.mp3",
+                    "applause-clip": "ovumm2f9Pu-applause.mp3",
+                    "median": -27.184074891247466,
+                    "supporting": [
+                                   {
+                                   "title": "EPA",
+                                   "url": "https://en.wikipedia.org/wiki/United_States_Environmental_Protection_Agency"
+                                   },
+                                   {
+                                   "title": "National Security",
+                                   "url": "https://en.wikipedia.org/wiki/National_security_of_the_United_States"
+                                   }
+                                   ],
+                    "score": 0.8011475619768923
+                    }
+                    ]
+    },
+    "Security": {
+        "count": 17,
+        "total": 16.616019107746116,
+        "percent_overall": 0.13302546043491367,
+        "related": [
+                    {
+                    "leadup": {
+                    "start": "712.8238519394466",
+                    "stop": "687"
+                    },
+                    "applause": {
+                    "start": "687",
+                    "stop": "703.5",
+                    "duration": 16.5
+                    },
+                    "category": "Security",
+                    "quote": "To protect our citizens, I have directed the Department of Justice to form a Task Force on Reducing Violent Crime.\\n\\nI have further ordered the Departments of Homeland Security and Justice, along with the Department of State and the Director of National Intelligence, to coordinate an aggressive strategy to dismantle the criminal cartels that have spread across our Nation.",
+                    "objectId": "UndaBGYuJt",
+                    "clip": "UndaBGYuJt-clip.mp3",
+                    "applause-clip": "UndaBGYuJt-applause.mp3",
+                    "median": -26.615170082842383,
+                    "supporting": [
+                                   {
+                                   "title": "National Security",
+                                   "url": "https://en.wikipedia.org/wiki/National_security_of_the_United_States"
+                                   }
+                                   ],
+                    "score": 1.249469572231416
+                    },
+                    {
+                    "leadup": {
+                    "start": "841.5105570944675",
+                    "stop": "847"
+                    },
+                    "applause": {
+                    "start": "847",
+                    "stop": "860.5257295094395",
+                    "duration": 13.525729509439543
+                    },
+                    "category": "Immigration, Security",
+                    "quote": "For that reason, we will soon begin the construction of a great wall along our Southern border.",
+                    "objectId": "FwB1JWA6IG",
+                    "clip": "FwB1JWA6IG-clip.mp3",
+                    "applause-clip": "FwB1JWA6IG-applause.mp3",
+                    "median": -26.96856278338923,
+                    "supporting": [
+                                   {
+                                   "title": "National Security",
+                                   "url": "https://en.wikipedia.org/wiki/National_security_of_the_United_States"
+                                   }
+                                   ],
+                    "score": 0.961818375627923
+                    },
+                    {
+                    "leadup": {
+                    "start": "885",
+                    "stop": "897"
+                    },
+                    "applause": {
+                    "start": "897",
+                    "stop": "905",
+                    "duration": 8.0
+                    },
+                    "category": "Economy, Security",
+                    "quote": "...What would you say to the American family that loses their jobs, their income, or a loved one because America refused to uphold its laws and defend its borders?",
+                    "objectId": "F3u6gRbfRF",
+                    "clip": "F3u6gRbfRF-clip.mp3",
+                    "applause-clip": "F3u6gRbfRF-applause.mp3",
+                    "median": -27.802627746383113,
+                    "supporting": [
+                                   {
+                                   "title": "National Security",
+                                   "url": "https://en.wikipedia.org/wiki/National_security_of_the_United_States"
+                                   }
+                                   ],
+                    "score": 0.48392341784347087
+                    },
+                    {
+                    "leadup": {
+                    "start": "913.1154412174571",
+                    "stop": "919"
+                    },
+                    "applause": {
+                    "start": "919",
+                    "stop": "936",
+                    "duration": 17.0
+                    },
+                    "category": "Security",
+                    "quote": "We are also taking strong measures to protect our Nation from Radical Islamic Terrorism.",
+                    "objectId": "4BcwH8GGta",
+                    "clip": "4BcwH8GGta-clip.mp3",
+                    "applause-clip": "4BcwH8GGta-applause.mp3",
+                    "median": -26.73521390368256,
+                    "supporting": [
+                                   {
+                                   "title": "National Security",
+                                   "url": "https://en.wikipedia.org/wiki/National_security_of_the_United_States"
+                                   }
+                                   ],
+                    "score": 1.2911523456342004
+                    },
+                    {
+                    "leadup": {
+                    "start": "965",
+                    "stop": "974"
+                    },
+                    "applause": {
+                    "start": "975",
+                    "stop": "993",
+                    "duration": 18.0
+                    },
+                    "category": "Security Immigration",
+                    "quote": "It is not compassion but reckless to allow uncontrolled entry from places where proper vetting cannot occur.",
+                    "objectId": "ACtKxYdxB8",
+                    "clip": "ACtKxYdxB8-clip.mp3",
+                    "applause-clip": "ACtKxYdxB8-applause.mp3",
+                    "median": -27.20835412337495,
+                    "supporting": [
+                                   {
+                                   "title": "National Security",
+                                   "url": "https://en.wikipedia.org/wiki/National_security_of_the_United_States"
+                                   },
+                                   {
+                                   "title": "Immigration",
+                                   "url": "https://en.wikipedia.org/wiki/Immigration_to_the_United_States"
+                                   }
+                                   ],
+                    "score": 1.362662674199611
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "1011",
+                    "stop": "1017",
+                    "duration": 6.0
+                    },
+                    "category": "Security Immigration",
+                    "quote": "We cannot allow our country to become a sanctuary for extremists.",
+                    "objectId": "0IlEne2sdw",
+                    "clip": "0IlEne2sdw-clip.mp3",
+                    "applause-clip": "0IlEne2sdw-applause.mp3",
+                    "median": -27.741015729122935,
+                    "supporting": [
+                                   {
+                                   "title": "National Security",
+                                   "url": "https://en.wikipedia.org/wiki/National_security_of_the_United_States"
+                                   },
+                                   {
+                                   "title": "Immigration",
+                                   "url": "https://en.wikipedia.org/wiki/Immigration_to_the_United_States"
+                                   }
+                                   ],
+                    "score": 0.3385062599053079
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "1030",
+                    "stop": "1037",
+                    "duration": 7.0
+                    },
+                    "category": "Security Immigration",
+                    "quote": "That is why my administration has been working on improved vetting procedures and we will shortly take new steps to keep our nation safe and to keep those out who will do us harm.",
+                    "objectId": "jjBnK65nag",
+                    "clip": "jjBnK65nag-clip.mp3",
+                    "applause-clip": "jjBnK65nag-applause.mp3",
+                    "median": -28.82730491862948,
+                    "supporting": [
+                                   {
+                                   "title": "National Security",
+                                   "url": "https://en.wikipedia.org/wiki/National_security_of_the_United_States"
+                                   },
+                                   {
+                                   "title": "Immigration",
+                                   "url": "https://en.wikipedia.org/wiki/Immigration_to_the_United_States"
+                                   }
+                                   ],
+                    "score": 0.3949739999637059
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "1062",
+                    "stop": "1081",
+                    "duration": 19.0
+                    },
+                    "category": "Security",
+                    "quote": "We will work with our allies including those in the Muslim world to extinguish this vile enemy [ISIS] from our planet.",
+                    "objectId": "Oxpe5c8YzS",
+                    "clip": "Oxpe5c8YzS-clip.mp3",
+                    "applause-clip": "Oxpe5c8YzS-applause.mp3",
+                    "median": -26.810366828625504,
+                    "supporting": [
+                                   {
+                                   "title": "National Security",
+                                   "url": "https://en.wikipedia.org/wiki/National_security_of_the_United_States"
+                                   }
+                                   ],
+                    "score": 1.4795827010585036
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "1094",
+                    "stop": "1109",
+                    "duration": 15.0
+                    },
+                    "category": "Security",
+                    "quote": "I have also imposed new sanctions on entities and individuals who support Iran's ballistic missile program and reaffirmed our unbreakable alliance with the state of Israel.",
+                    "objectId": "c2Em2IChNu",
+                    "clip": "c2Em2IChNu-clip.mp3",
+                    "applause-clip": "c2Em2IChNu-applause.mp3",
+                    "median": -27.039807663794555,
+                    "supporting": [
+                                   {
+                                   "title": "National Security",
+                                   "url": "https://en.wikipedia.org/wiki/National_security_of_the_United_States"
+                                   }
+                                   ],
+                    "score": 1.0917180120518235
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "2199.7165960535044",
+                    "stop": "2211.476984282215",
+                    "duration": 11.76038822871078
+                    },
+                    "category": "Healthcare Environment Security",
+                    "quote": "to invest in women's health, and to promote clean air and clear water, and to rebuild our military and our infrastructure.",
+                    "objectId": "ovumm2f9Pu",
+                    "clip": "ovumm2f9Pu-clip.mp3",
+                    "applause-clip": "ovumm2f9Pu-applause.mp3",
+                    "median": -27.184074891247466,
+                    "supporting": [
+                                   {
+                                   "title": "EPA",
+                                   "url": "https://en.wikipedia.org/wiki/United_States_Environmental_Protection_Agency"
+                                   },
+                                   {
+                                   "title": "National Security",
+                                   "url": "https://en.wikipedia.org/wiki/National_security_of_the_United_States"
+                                   }
+                                   ],
+                    "score": 0.8011475619768923
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "2807.1704134284914",
+                    "stop": "2813.9680551518477",
+                    "duration": 6.797641723356264
+                    },
+                    "category": "Security",
+                    "quote": "...we will never stop fighting for Justice...we will always honor their memory.",
+                    "objectId": "mX8y7n7t73",
+                    "clip": "mX8y7n7t73-clip.mp3",
+                    "applause-clip": "mX8y7n7t73-applause.mp3",
+                    "median": -28.18518075392605,
+                    "supporting": [
+                                   {
+                                   "title": "National Security",
+                                   "url": "https://en.wikipedia.org/wiki/National_security_of_the_United_States"
+                                   }
+                                   ],
+                    "score": 0.38942785661207363
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "2828.1554474420973",
+                    "stop": "2845.8598061238813",
+                    "duration": 17.704358681784015
+                    },
+                    "category": "Security",
+                    "quote": "...to keep America Safe we must provide the men and women of the United States military with the tools they need to prevent war and --- if they must --- to fight and they only have to win.",
+                    "objectId": "PJUVpM59N9",
+                    "clip": "PJUVpM59N9-clip.mp3",
+                    "applause-clip": "PJUVpM59N9-applause.mp3",
+                    "median": -27.22660818887742,
+                    "supporting": [
+                                   {
+                                   "title": "National Security",
+                                   "url": "https://en.wikipedia.org/wiki/National_security_of_the_United_States"
+                                   }
+                                   ],
+                    "score": 1.3338491240939427
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "2853.142731571147",
+                    "stop": "2868",
+                    "duration": 14.857268428852876
+                    },
+                    "category": "Security",
+                    "quote": "I am sending the Congress a budget that rebuilds the military, eliminates the Defense sequester...",
+                    "objectId": "qMBdzeAjwi",
+                    "clip": "qMBdzeAjwi-clip.mp3",
+                    "applause-clip": "qMBdzeAjwi-applause.mp3",
+                    "median": -27.220519236901417,
+                    "supporting": [
+                                   {
+                                   "title": "National Security",
+                                   "url": "https://en.wikipedia.org/wiki/National_security_of_the_United_States"
+                                   }
+                                   ],
+                    "score": 1.0715866813752652
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "2948.333673300605",
+                    "stop": "2976.6745385760264",
+                    "duration": 28.340865275421493
+                    },
+                    "category": "Security",
+                    "quote": "Ryan died as he lived. A warrior and a hero - battling against terrorism and securing our nation.",
+                    "objectId": "mxM3nEKR3k",
+                    "clip": "mxM3nEKR3k-clip.mp3",
+                    "applause-clip": "mxM3nEKR3k-applause.mp3",
+                    "median": -27.818914202508715,
+                    "supporting": [
+                                   {
+                                   "title": "National Security",
+                                   "url": "https://en.wikipedia.org/wiki/National_security_of_the_United_States"
+                                   }
+                                   ],
+                    "score": 2.350586333923991
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "3193.0827055487043",
+                    "stop": "3209",
+                    "duration": 15.917294451295675
+                    },
+                    "category": "Security",
+                    "quote": "We strongly support NATO, an alliance forged through the bonds of two World Wars that dethroned fascism",
+                    "objectId": "ThEavgl8Vw",
+                    "clip": "ThEavgl8Vw-clip.mp3",
+                    "applause-clip": "ThEavgl8Vw-applause.mp3",
+                    "median": -26.909635219256508,
+                    "supporting": [
+                                   {
+                                   "title": "National Security",
+                                   "url": "https://en.wikipedia.org/wiki/National_security_of_the_United_States"
+                                   }
+                                   ],
+                    "score": 1.1814864690671376
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "3227.598696914349",
+                    "stop": "3235",
+                    "duration": 7.401303085650852
+                    },
+                    "category": "Security",
+                    "quote": "Our partners must meet their financial obligations...They are beginning to do just that. In fact I can tell you - the money is pouring in.",
+                    "objectId": "GOH3CCTH0R",
+                    "clip": "GOH3CCTH0R-clip.mp3",
+                    "applause-clip": "GOH3CCTH0R-applause.mp3",
+                    "median": -27.423743223954546,
+                    "supporting": [
+                                   {
+                                   "title": "National Security",
+                                   "url": "https://en.wikipedia.org/wiki/National_security_of_the_United_States"
+                                   }
+                                   ],
+                    "score": 0.4451521778937131
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "3264.5751383645284",
+                    "stop": "3271.380944190945",
+                    "duration": 6.805805826416417
+                    },
+                    "category": "Security",
+                    "quote": "We will respect historic institutions, but we will respect the foreign rights of all nations and they have to respect our rights as a nation also.\n",
+                    "objectId": "91RfZdCKon",
+                    "clip": "91RfZdCKon-clip.mp3",
+                    "applause-clip": "91RfZdCKon-applause.mp3",
+                    "median": -28.26032458556763,
+                    "supporting": [
+                                   {
+                                   "title": "National Security",
+                                   "url": "https://en.wikipedia.org/wiki/National_security_of_the_United_States"
+                                   }
+                                   ],
+                    "score": 0.38897554428713904
+                    }
+                    ]
+    },
+    "Immigration": {
+        "count": 12,
+        "total": 8.427629546988221,
+        "percent_overall": 0.06747039068704234,
+        "related": [
+                    {
+                    "leadup": {
+                    "start": "774.8547438945786",
+                    "stop": "783"
+                    },
+                    "applause": {
+                    "start": "783",
+                    "stop": "789.4498703913604",
+                    "duration": 6.449870391360378
+                    },
+                    "category": "Immigration",
+                    "quote": "At the same time, my Administration has answered the pleas of the American people for immigration enforcement and border security. ",
+                    "objectId": "0d3DBwT7yI",
+                    "clip": "0d3DBwT7yI-clip.mp3",
+                    "applause-clip": "0d3DBwT7yI-applause.mp3",
+                    "median": -29.201432071694352,
+                    "supporting": [
+                                   {
+                                   "title": "Immigration",
+                                   "url": "https://en.wikipedia.org/wiki/Immigration_to_the_United_States"
+                                   }
+                                   ],
+                    "score": 0.35199345182780234
+                    },
+                    {
+                    "leadup": {
+                    "start": "788.75",
+                    "stop": "801"
+                    },
+                    "applause": {
+                    "start": "801",
+                    "stop": "807",
+                    "duration": 6.0
+                    },
+                    "category": "Economy, Immigration",
+                    "quote": "By finally enforcing our immigration laws, we will raise wages, help the unemployed, save billions and billions of dollars, and make our communities safer for everyone.",
+                    "objectId": "eC6QHbbwsj",
+                    "clip": "eC6QHbbwsj-clip.mp3",
+                    "applause-clip": "eC6QHbbwsj-applause.mp3",
+                    "median": -28.09720449320938,
+                    "supporting": [
+                                   {
+                                   "title": "Immigration",
+                                   "url": "https://en.wikipedia.org/wiki/Immigration_to_the_United_States"
+                                   }
+                                   ],
+                    "score": 0.33421500999180365
+                    },
+                    {
+                    "leadup": {
+                    "start": "814.25",
+                    "stop": "820"
+                    },
+                    "applause": {
+                    "start": "820",
+                    "stop": "840",
+                    "duration": 20.0
+                    },
+                    "category": "Immigration",
+                    "quote": "We must restore integrity and the rule of law at our borders.",
+                    "objectId": "zewcbkvi5x",
+                    "clip": "zewcbkvi5x-clip.mp3",
+                    "applause-clip": "zewcbkvi5x-applause.mp3",
+                    "median": -27.159863336509844,
+                    "supporting": [
+                                   {
+                                   "title": "Immigration",
+                                   "url": "https://en.wikipedia.org/wiki/Immigration_to_the_United_States"
+                                   }
+                                   ],
+                    "score": 1.5572556464511884
+                    },
+                    {
+                    "leadup": {
+                    "start": "841.5105570944675",
+                    "stop": "847"
+                    },
+                    "applause": {
+                    "start": "847",
+                    "stop": "860.5257295094395",
+                    "duration": 13.525729509439543
+                    },
+                    "category": "Immigration, Security",
+                    "quote": "For that reason, we will soon begin the construction of a great wall along our Southern border.",
+                    "objectId": "FwB1JWA6IG",
+                    "clip": "FwB1JWA6IG-clip.mp3",
+                    "applause-clip": "FwB1JWA6IG-applause.mp3",
+                    "median": -26.96856278338923,
+                    "supporting": [
+                                   {
+                                   "title": "National Security",
+                                   "url": "https://en.wikipedia.org/wiki/National_security_of_the_United_States"
+                                   }
+                                   ],
+                    "score": 0.961818375627923
+                    },
+                    {
+                    "leadup": {
+                    "start": "965",
+                    "stop": "974"
+                    },
+                    "applause": {
+                    "start": "975",
+                    "stop": "993",
+                    "duration": 18.0
+                    },
+                    "category": "Security Immigration",
+                    "quote": "It is not compassion but reckless to allow uncontrolled entry from places where proper vetting cannot occur.",
+                    "objectId": "ACtKxYdxB8",
+                    "clip": "ACtKxYdxB8-clip.mp3",
+                    "applause-clip": "ACtKxYdxB8-applause.mp3",
+                    "median": -27.20835412337495,
+                    "supporting": [
+                                   {
+                                   "title": "National Security",
+                                   "url": "https://en.wikipedia.org/wiki/National_security_of_the_United_States"
+                                   },
+                                   {
+                                   "title": "Immigration",
+                                   "url": "https://en.wikipedia.org/wiki/Immigration_to_the_United_States"
+                                   }
+                                   ],
+                    "score": 1.362662674199611
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "1011",
+                    "stop": "1017",
+                    "duration": 6.0
+                    },
+                    "category": "Security Immigration",
+                    "quote": "We cannot allow our country to become a sanctuary for extremists.",
+                    "objectId": "0IlEne2sdw",
+                    "clip": "0IlEne2sdw-clip.mp3",
+                    "applause-clip": "0IlEne2sdw-applause.mp3",
+                    "median": -27.741015729122935,
+                    "supporting": [
+                                   {
+                                   "title": "National Security",
+                                   "url": "https://en.wikipedia.org/wiki/National_security_of_the_United_States"
+                                   },
+                                   {
+                                   "title": "Immigration",
+                                   "url": "https://en.wikipedia.org/wiki/Immigration_to_the_United_States"
+                                   }
+                                   ],
+                    "score": 0.3385062599053079
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "1030",
+                    "stop": "1037",
+                    "duration": 7.0
+                    },
+                    "category": "Security Immigration",
+                    "quote": "That is why my administration has been working on improved vetting procedures and we will shortly take new steps to keep our nation safe and to keep those out who will do us harm.",
+                    "objectId": "jjBnK65nag",
+                    "clip": "jjBnK65nag-clip.mp3",
+                    "applause-clip": "jjBnK65nag-applause.mp3",
+                    "median": -28.82730491862948,
+                    "supporting": [
+                                   {
+                                   "title": "National Security",
+                                   "url": "https://en.wikipedia.org/wiki/National_security_of_the_United_States"
+                                   },
+                                   {
+                                   "title": "Immigration",
+                                   "url": "https://en.wikipedia.org/wiki/Immigration_to_the_United_States"
+                                   }
+                                   ],
+                    "score": 0.3949739999637059
+                    },
+                    {
+                    "leadup": {
+                    "start": "1529.6758119481851",
+                    "stop": "1539"
+                    },
+                    "applause": {
+                    "start": "1539",
+                    "stop": "1545",
+                    "duration": 6.0
+                    },
+                    "category": "Immigration",
+                    "quote": "I'm going to bring back millions of jobs. Protecting our workers also means reforming our system of legal immigration.",
+                    "objectId": "7iiLap44sa",
+                    "clip": "7iiLap44sa-clip.mp3",
+                    "applause-clip": "7iiLap44sa-applause.mp3",
+                    "median": -27.6510033003047,
+                    "supporting": [
+                                   {
+                                   "title": "Immigration",
+                                   "url": "https://en.wikipedia.org/wiki/Immigration_to_the_United_States"
+                                   }
+                                   ],
+                    "score": 0.3396082007749876
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "1561.5949315676178",
+                    "stop": "1566.2025282782975",
+                    "duration": 4.6075967106796725
+                    },
+                    "category": "Immigration",
+                    "quote": "Nations around the world, like Canada, Australia and many others --- have a merit-based immigration system.",
+                    "objectId": "4Pbt0o9sjm",
+                    "clip": "4Pbt0o9sjm-clip.mp3",
+                    "applause-clip": "4Pbt0o9sjm-applause.mp3",
+                    "median": -29.79469102116754,
+                    "supporting": [
+                                   {
+                                   "title": "Immigration",
+                                   "url": "https://en.wikipedia.org/wiki/Immigration_to_the_United_States"
+                                   }
+                                   ],
+                    "score": 0.22657093058596187
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "1616.0048475235867",
+                    "stop": "1624.5",
+                    "duration": 8.495152476413296
+                    },
+                    "category": "Immigration",
+                    "quote": "Switching away from this current system of lower-skilled immigration, and instead adopting a merit-based system, will have many benefits: it will save countless dollars, raise workers' wages, and help struggling families --- including immigrant families --- enter the middle class.\n\nAnd they will be very, very happy indeed.",
+                    "objectId": "7ilg01uMoh",
+                    "clip": "7ilg01uMoh-clip.mp3",
+                    "applause-clip": "7ilg01uMoh-applause.mp3",
+                    "median": -27.734553012425817,
+                    "supporting": [
+                                   {
+                                   "title": "Immigration",
+                                   "url": "https://en.wikipedia.org/wiki/Immigration_to_the_United_States"
+                                   }
+                                   ],
+                    "score": 0.5229290900947722
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "2647.0447242033424",
+                    "stop": "2656.7315289202584",
+                    "duration": 9.686804716915958
+                    },
+                    "category": "Immigration",
+                    "quote": "...VOICE --- Victims Of Immigration Crime Engagement. We are providing a voice to those who have been ignored by our media, and silenced by special interests.",
+                    "objectId": "5FP0yU4dUJ",
+                    "clip": "5FP0yU4dUJ-clip.mp3",
+                    "applause-clip": "5FP0yU4dUJ-applause.mp3",
+                    "median": -28.01677901455089,
+                    "supporting": [
+                                   {
+                                   "title": "Immigration",
+                                   "url": "https://en.wikipedia.org/wiki/Immigration_to_the_United_States"
+                                   }
+                                   ],
+                    "score": 0.6099685960455425
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "2708.5178605081974",
+                    "stop": "2727.634961315605",
+                    "duration": 19.117100807407496
+                    },
+                    "category": "Immigration, Guest",
+                    "quote": "Jamiel's 17-year-old son was viciously murdered by an illegal immigrant gang member, who had just been released from prison",
+                    "objectId": "5DRvnoMArX",
+                    "clip": "5DRvnoMArX-clip.mp3",
+                    "applause-clip": "5DRvnoMArX-applause.mp3",
+                    "median": -28.010110384942664,
+                    "supporting": [
+                    
+                    ],
+                    "score": 1.4271273115196133
+                    }
+                    ]
+    },
+    "Guest": {
+        "count": 5,
+        "total": 8.600245156157085,
+        "percent_overall": 0.06885232644066919,
+        "related": [
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "1143",
+                    "stop": "1167",
+                    "duration": 24.0
+                    },
+                    "category": "Guest",
+                    "quote": "I am greatly honored to have Maureen Sculley with us in the gallery tonight.",
+                    "objectId": "J34aOLEZcR",
+                    "clip": "J34aOLEZcR-clip.mp3",
+                    "applause-clip": "J34aOLEZcR-applause.mp3",
+                    "median": -27.708759705756272,
+                    "supporting": [
+                    
+                    ],
+                    "score": 1.9171097050071149
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "2244.8324760794117",
+                    "stop": "2269.275403325387",
+                    "duration": 24.44292724597517
+                    },
+                    "category": "Guest",
+                    "quote": "Today is Rare Disease day, and joining us in the gallery is a Rare Disease Survivor, Megan Crowley.",
+                    "objectId": "Q7UdVEFkyw",
+                    "clip": "Q7UdVEFkyw-clip.mp3",
+                    "applause-clip": "Q7UdVEFkyw-applause.mp3",
+                    "median": -27.812395710917173,
+                    "supporting": [
+                    
+                    ],
+                    "score": 1.9541285012768732
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "2301.6953162568147",
+                    "stop": "2322.2293554639755",
+                    "duration": 20.53403920716073
+                    },
+                    "category": "Guest",
+                    "quote": "Megan's dad, John, fought with everything he had to save the life of his precious child...today she is 20 years old.",
+                    "objectId": "wZgw1R4dNt",
+                    "clip": "wZgw1R4dNt-clip.mp3",
+                    "applause-clip": "wZgw1R4dNt-applause.mp3",
+                    "median": -27.171960677794132,
+                    "supporting": [
+                    
+                    ],
+                    "score": 1.608688681600924
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "2708.5178605081974",
+                    "stop": "2727.634961315605",
+                    "duration": 19.117100807407496
+                    },
+                    "category": "Immigration, Guest",
+                    "quote": "Jamiel's 17-year-old son was viciously murdered by an illegal immigrant gang member, who had just been released from prison",
+                    "objectId": "5DRvnoMArX",
+                    "clip": "5DRvnoMArX-clip.mp3",
+                    "applause-clip": "5DRvnoMArX-applause.mp3",
+                    "median": -28.010110384942664,
+                    "supporting": [
+                    
+                    ],
+                    "score": 1.4271273115196133
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "2771.549954357468",
+                    "stop": "2792.992225996738",
+                    "duration": 21.442271639270075
+                    },
+                    "category": "Nationalism, Guest",
+                    "quote": "I want you to know that your father was a hero, and that tonight you have the love of an entire country supporting you and praying for you.",
+                    "objectId": "MFmkl4AMY4",
+                    "clip": "MFmkl4AMY4-clip.mp3",
+                    "applause-clip": "MFmkl4AMY4-applause.mp3",
+                    "median": -27.251006771319407,
+                    "supporting": [
+                    
+                    ],
+                    "score": 1.6931909567525598
+                    }
+                    ]
+    },
+    "Trade": {
+        "count": 2,
+        "total": 1.4877997132321374,
+        "percent_overall": 0.011911110633916687,
+        "related": [
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "1457",
+                    "stop": "1474",
+                    "duration": 17.0
+                    },
+                    "category": "Economy Trade",
+                    "quote": "It's very hard to do business with other countries, because they tax our goods at such a high rate. They said that in the case of another country, they taxed their motorcycles at 100%. They weren't even asking for a change, but I am.",
+                    "objectId": "yEzkvydESL",
+                    "clip": "yEzkvydESL-clip.mp3",
+                    "applause-clip": "yEzkvydESL-applause.mp3",
+                    "median": -26.810366828625504,
+                    "supporting": [
+                                   {
+                                   "title": "Economy",
+                                   "url": "https://en.wikipedia.org/wiki/Economy_of_the_United_States"
+                                   }
+                                   ],
+                    "score": 1.2875330786565569
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "1525",
+                    "stop": "1529",
+                    "duration": 4.0
+                    },
+                    "category": "Economy Trade",
+                    "quote": "They have taken advantage of our country no longer (regarding tariffs on products).",
+                    "objectId": "D9EAIDCGNB",
+                    "clip": "D9EAIDCGNB-clip.mp3",
+                    "applause-clip": "D9EAIDCGNB-applause.mp3",
+                    "median": -28.24661362828008,
+                    "supporting": [
+                                   {
+                                   "title": "Economy",
+                                   "url": "https://en.wikipedia.org/wiki/Economy_of_the_United_States"
+                                   }
+                                   ],
+                    "score": 0.20026663457558055
+                    }
+                    ]
+    },
+    "Bipartisanship": {
+        "count": 4,
+        "total": 3.4254507287003175,
+        "percent_overall": 0.02742366612770946,
+        "related": [
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "1658.5",
+                    "stop": "1675.6857391892008",
+                    "duration": 17.18573918920083
+                    },
+                    "category": "Nationalism Bipartisanship",
+                    "quote": "If we are guided by the well-being of American citizens then I believe Republicans and Democrats can work together to achieve an outcome that has eluded our country for decades.",
+                    "objectId": "Edo8iTQFX9",
+                    "clip": "Edo8iTQFX9-clip.mp3",
+                    "applause-clip": "Edo8iTQFX9-applause.mp3",
+                    "median": -27.380235993478866,
+                    "supporting": [
+                    
+                    ],
+                    "score": 1.2779771352325586
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "1956.1364749819538",
+                    "stop": "1963.0880194884505",
+                    "duration": 6.9515445064967025
+                    },
+                    "category": "Healthcare Bipartisanship Nationalism",
+                    "quote": "So I am calling on all Democrats and Republicans in the Congress to work with us to save Americans from this imploding Obamacare disaster.",
+                    "objectId": "5IkcEB5j0m",
+                    "clip": "5IkcEB5j0m-clip.mp3",
+                    "applause-clip": "5IkcEB5j0m-applause.mp3",
+                    "median": -28.191985211491485,
+                    "supporting": [
+                    
+                    ],
+                    "score": 0.40038331924242093
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "2128.1299645743775",
+                    "stop": "2146.0420780748445",
+                    "duration": 17.912113500467058
+                    },
+                    "category": "Nationalism Bipartisanship",
+                    "quote": "Every problem can be solved...our citizens deserve this and so much more. So why not join forces and get the job done?",
+                    "objectId": "AxzNwXJHIp",
+                    "clip": "AxzNwXJHIp-clip.mp3",
+                    "applause-clip": "AxzNwXJHIp-applause.mp3",
+                    "median": -26.956745244643756,
+                    "supporting": [
+                    
+                    ],
+                    "score": 1.3669923566387951
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "2156.0650501794967",
+                    "stop": "2162.5840524470705",
+                    "duration": 6.519002267573796
+                    },
+                    "category": "Nationalism Bipartisanship",
+                    "quote": "Democrats and Republicans should get together and unite for the good of our country, and for the good of the American people.",
+                    "objectId": "oIEq8HtNGG",
+                    "clip": "oIEq8HtNGG-clip.mp3",
+                    "applause-clip": "oIEq8HtNGG-applause.mp3",
+                    "median": -27.40507057691072,
+                    "supporting": [
+                    
+                    ],
+                    "score": 0.38009791758654293
+                    }
+                    ]
+    },
+    "Infrastructure": {
+        "count": 2,
+        "total": 1.5157422515878678,
+        "percent_overall": 0.01213481457927135,
+        "related": [
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "1693.972248302261",
+                    "stop": "1710.0939519577937",
+                    "duration": 16.121703655532656
+                    },
+                    "category": "Infrastructure",
+                    "quote": "Dwight D. Eisenhower, initiated the last truly great national infrastructure program. The time has come for a new program of national rebuilding",
+                    "objectId": "PCDtozy6wH",
+                    "clip": "PCDtozy6wH-clip.mp3",
+                    "applause-clip": "PCDtozy6wH-applause.mp3",
+                    "median": -27.057710568733974,
+                    "supporting": [
+                    
+                    ],
+                    "score": 1.193912833129084
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "1731",
+                    "stop": "1737",
+                    "duration": 6.0
+                    },
+                    "category": "Infrastructure",
+                    "quote": "America has spent approximately six trillion dollars in the Middle East...With this six trillion dollars we could have rebuilt our country...",
+                    "objectId": "tx31cs6v23",
+                    "clip": "tx31cs6v23-clip.mp3",
+                    "applause-clip": "tx31cs6v23-applause.mp3",
+                    "median": -29.17852421761235,
+                    "supporting": [
+                    
+                    ],
+                    "score": 0.3218294184587838
+                    }
+                    ]
+    },
+    "Healthcare": {
+        "count": 13,
+        "total": 11.377285038380666,
+        "percent_overall": 0.09108490854011407,
+        "related": [
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "1794.7475907016387",
+                    "stop": "1816.5",
+                    "duration": 21.752409298361272
+                    },
+                    "category": "Healthcare",
+                    "quote": "...I am also calling on this Congress to repeal and replace Obamacare...",
+                    "objectId": "B7x9FVvTha",
+                    "clip": "B7x9FVvTha-clip.mp3",
+                    "applause-clip": "B7x9FVvTha-applause.mp3",
+                    "median": -26.51919242520701,
+                    "supporting": [
+                    
+                    ],
+                    "score": 1.771429665820032
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "1825.923670195369",
+                    "stop": "1831.4093844810832",
+                    "duration": 5.485714285714266
+                    },
+                    "category": "Healthcare",
+                    "quote": "...with reforms that expand choice, increase access, lower costs, and at the same time, provide better Healthcare.",
+                    "objectId": "NzxG33MQIF",
+                    "clip": "NzxG33MQIF-clip.mp3",
+                    "applause-clip": "NzxG33MQIF-applause.mp3",
+                    "median": -29.604408495325195,
+                    "supporting": [
+                    
+                    ],
+                    "score": 0.2835861993967007
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "1839.4957336874324",
+                    "stop": "1847.9398646755335",
+                    "duration": 8.444130988101051
+                    },
+                    "category": "Healthcare",
+                    "quote": "Mandating every American to buy government-approved health insurance was never the right solution for America.",
+                    "objectId": "gCXdXeG8CS",
+                    "clip": "gCXdXeG8CS-clip.mp3",
+                    "applause-clip": "gCXdXeG8CS-applause.mp3",
+                    "median": -27.361656543318627,
+                    "supporting": [
+                    
+                    ],
+                    "score": 0.5260794226263147
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "1856.0029939272342",
+                    "stop": "1868.5016358346807",
+                    "duration": 12.498641907446427
+                    },
+                    "category": "Healthcare",
+                    "quote": "The way to make health insurance available to everyone is to lower the cost of health insurance, and that is what we are going to do.",
+                    "objectId": "98akytQb3y",
+                    "clip": "98akytQb3y-clip.mp3",
+                    "applause-clip": "98akytQb3y-applause.mp3",
+                    "median": -26.962652004230833,
+                    "supporting": [
+                    
+                    ],
+                    "score": 0.8715973985809418
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "1922.3366976860696",
+                    "stop": "1940.594524523617",
+                    "duration": 18.257826837547555
+                    },
+                    "category": "Healthcare",
+                    "quote": "Obamacare is collapsing --- and we must act decisively to protect all Americans",
+                    "objectId": "q383zqsFp2",
+                    "clip": "q383zqsFp2-clip.mp3",
+                    "applause-clip": "q383zqsFp2-applause.mp3",
+                    "median": -26.821986749606754,
+                    "supporting": [
+                    
+                    ],
+                    "score": 1.4070852519648551
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "1956.1364749819538",
+                    "stop": "1963.0880194884505",
+                    "duration": 6.9515445064967025
+                    },
+                    "category": "Healthcare Bipartisanship Nationalism",
+                    "quote": "So I am calling on all Democrats and Republicans in the Congress to work with us to save Americans from this imploding Obamacare disaster.",
+                    "objectId": "5IkcEB5j0m",
+                    "clip": "5IkcEB5j0m-clip.mp3",
+                    "applause-clip": "5IkcEB5j0m-applause.mp3",
+                    "median": -28.191985211491485,
+                    "supporting": [
+                    
+                    ],
+                    "score": 0.40038331924242093
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "1983.178112710822",
+                    "stop": "1996.6029668215622",
+                    "duration": 13.42485411074017
+                    },
+                    "category": "Healthcare",
+                    "quote": "we should ensure that Americans with pre-existing conditions have access to coverage, and that we have a stable transition for Americans currently enrolled in the healthcare exchanges.",
+                    "objectId": "l04G38fzxI",
+                    "clip": "l04G38fzxI-clip.mp3",
+                    "applause-clip": "l04G38fzxI-applause.mp3",
+                    "median": -27.03384821955524,
+                    "supporting": [
+                    
+                    ],
+                    "score": 0.9505590422605718
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "2010",
+                    "stop": "2022.5",
+                    "duration": 12.5
+                    },
+                    "category": "Healthcare",
+                    "quote": "...it must be the plan they want, not the plan forced on them by the Government.",
+                    "objectId": "s63IxQf2rG",
+                    "clip": "s63IxQf2rG-clip.mp3",
+                    "applause-clip": "s63IxQf2rG-applause.mp3",
+                    "median": -26.833622236461355,
+                    "supporting": [
+                    
+                    ],
+                    "score": 0.8759074389835148
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "2031.7102944171388",
+                    "stop": "2043.7316120492271",
+                    "duration": 12.021317632088312
+                    },
+                    "category": "Healthcare",
+                    "quote": "We should give our great State Governors the resources and flexibility they need with Medicaid to make sure no one is left out.",
+                    "objectId": "J9tz31F7GY",
+                    "clip": "J9tz31F7GY-clip.mp3",
+                    "applause-clip": "J9tz31F7GY-applause.mp3",
+                    "median": -27.33694560307249,
+                    "supporting": [
+                    
+                    ],
+                    "score": 0.818823129758278
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "2060.7353328905556",
+                    "stop": "2074",
+                    "duration": 13.264667109444417
+                    },
+                    "category": "Healthcare",
+                    "quote": "...work to bring down the artificially high price of drugs and bring them down immediately.",
+                    "objectId": "y4iiUnNkOT",
+                    "clip": "y4iiUnNkOT-clip.mp3",
+                    "applause-clip": "y4iiUnNkOT-applause.mp3",
+                    "median": -26.839445830134462,
+                    "supporting": [
+                    
+                    ],
+                    "score": 0.9431850314107727
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "2081.3",
+                    "stop": "2092.2803028254843",
+                    "duration": 10.98030282548416
+                    },
+                    "category": "Healthcare",
+                    "quote": "the time has come to give Americans the freedom to purchase health insurance across State lines",
+                    "objectId": "1741U5Fs19",
+                    "clip": "1741U5Fs19-clip.mp3",
+                    "applause-clip": "1741U5Fs19-applause.mp3",
+                    "median": -27.03384821955524,
+                    "supporting": [
+                    
+                    ],
+                    "score": 0.7393669371048255
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "2175.5145988392233",
+                    "stop": "2189.5346459401253",
+                    "duration": 14.020047100902048
+                    },
+                    "category": "Healthcare",
+                    "quote": "...make childcare accessible and affordable, to help ensure new parents have paid family leave,",
+                    "objectId": "xAhSByJciX",
+                    "clip": "xAhSByJciX-clip.mp3",
+                    "applause-clip": "xAhSByJciX-applause.mp3",
+                    "median": -27.454953784442043,
+                    "supporting": [
+                    
+                    ],
+                    "score": 0.9881346392545471
+                    },
+                    {
+                    "leadup": {
+                    "start": "0",
+                    "stop": "0"
+                    },
+                    "applause": {
+                    "start": "2199.7165960535044",
+                    "stop": "2211.476984282215",
+                    "duration": 11.76038822871078
+                    },
+                    "category": "Healthcare Environment Security",
+                    "quote": "to invest in women's health, and to promote clean air and clear water, and to rebuild our military and our infrastructure.",
+                    "objectId": "ovumm2f9Pu",
+                    "clip": "ovumm2f9Pu-clip.mp3",
+                    "applause-clip": "ovumm2f9Pu-applause.mp3",
+                    "median": -27.184074891247466,
+                    "supporting": [
+                                   {
+                                   "title": "EPA",
+                                   "url": "https://en.wikipedia.org/wiki/United_States_Environmental_Protection_Agency"
+                                   },
+                                   {
+                                   "title": "National Security",
+                                   "url": "https://en.wikipedia.org/wiki/National_security_of_the_United_States"
+                                   }
+                                   ],
+                    "score": 0.8011475619768923
+                    }
+                    ]
+    }
+};
