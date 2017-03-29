@@ -27,15 +27,43 @@
         color: #fff;
         text-align: center;
     }
+
+    #msg {
+        font-size: 5em;
+        color: #000;
+        text-align: center;
+    }
     </style>
 </head>
 
 <body>
-    <p id="orientation" style="position: absolute; left: 200px; top: 200px; z-index: 100; font-size: 2em;"></p>
-    <div style="border: 1px solid red;">
+    <p id="msg"></p>
+    <div>
         <svg></svg>
     </div>
     
+    <script type="text/javascript">
+        function __resolveOrientation( angle) {
+            // http://www.williammalone.com/articles/html5-javascript-ios-orientation/
+            angle = Math.abs( angle);
+            return ( angle === 90) ? "landscape" : "portrait";
+        }
+    
+        function getOrientation() {
+            let orientation = "";
+            if ( window.screen && window.screen.orientation && window.screen.orientation.type) {
+                orientation = window.screen.orientation.type;
+                // string replace
+                orientation = orientation.replace( "-primary", "");
+            }
+            // 0 is a "falsy" value
+            if ( window.orientation || window.orientation === 0) {
+                orientation = __resolveOrientation( window.orientation);
+            }
+            
+            return orientation;
+        }
+    </script>
     <script type="text/javascript">
         // populate from categories.json
         var children = [];
@@ -85,8 +113,13 @@
             .append( "div")
             .attr("class", "text-node")
             .text( function( d) { return d.data.id; });
+            
+            // UI
+            let msgP = document.getElementById( "msg");
+            msgP.textContent = getOrientation();
+            console.log( getOrientation());
         }
-        
+    
         
         // orientation change
         window.addEventListener( "orientationchange", function() {
