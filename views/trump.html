@@ -33,6 +33,11 @@
         color: #000;
         text-align: center;
     }
+
+    .scalable {
+        transition-duration: 1.5s;
+        transform: scale( 2, 2);
+    }
     </style>
 </head>
 
@@ -103,11 +108,21 @@
             .enter()
             .append("div")
             .attr("class", "node")
+            .attr("id", function( d){ return d.data.id; })
             .attr("title", function(d) { return d.data.id; })
             .style("left", function(d) { return d.x0 + "px"; })
             .style("top", function(d) { return d.y0 + "px"; })
             .style("width", function(d) { return d.x1 - d.x0 + "px"; })
             .style("height", function(d) { return d.y1 - d.y0 + "px"; })
+            // click
+            .on( "click", function( d){
+               console.log( d.data.id);
+                let node = d3.select( this);
+                let isScalable = node.classed( "scalable");
+                
+                node.classed( "node", true)
+                .classed( "scalable", !isScalable);
+            })
             // color via d.data.total
             .style("background", function(d) { return color( d.data.total); })
             // text
