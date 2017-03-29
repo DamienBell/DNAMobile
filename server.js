@@ -22,7 +22,7 @@ app.get("/test", function (request, response) {
 
 // could also use the POST body instead of query string: http://expressjs.com/en/api.html#req.body
 app.get("/trump", function (request, response) {
-    response.sendFile(__dirname + '/views/index.html');
+    response.sendFile(__dirname + '/views/trump.html');
 });
 
 

@@ -1,0 +1,109 @@
+<html>
+<head>
+<title>Demo #1 (Treemap)</title>
+<!-- iOS -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!-- Chrome for Android -->
+<meta name="mobile-web-app-capable" content="yes">
+
+<script src="categories.json"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<style>
+    body {
+        margin: auto;
+        position: relative;
+        /*background: #000;*/
+    }
+
+    .node {
+        box-sizing: border-box;
+        position: absolute;
+        /* why? */
+        overflow: hidden;
+    }
+
+    .text-node {
+        font-size: 1em;
+        color: #fff;
+        text-align: center;
+    }
+    </style>
+</head>
+
+<body>
+    <p id="orientation" style="position: absolute; left: 200px; top: 200px; z-index: 100; font-size: 2em;"></p>
+    <div style="border: 1px solid red;">
+        <svg></svg>
+    </div>
+    
+    <script type="text/javascript">
+        // populate from categories.json
+        var children = [];
+        var i = 1;
+        for (var key of Object.keys( categories)) {
+                let category = categories[ key];
+                let count = category.count;
+                children.push( { id: key, value: count});
+                i = i+1;
+        }
+        var data = { "name": "rect", "children": children};
+        var svg = d3.select( "svg");
+        
+        function draw() {
+            var width =  window.innerWidth,
+            height = window.innerHeight
+            svg = svg.attr( "width", width)
+                .attr( "height", height);
+            
+            //alert( width + " x " + height);
+            
+            var treemap = d3.treemap()
+            .tile( d3.treemapResquarify)
+            .size( [width, height])
+            .round( true)
+            .paddingInner( 5);
+            
+            var tree = d3.hierarchy( data);
+            // sum before we pass to treemap()
+            tree.sum( function(d) { return d.value; });
+            
+            treemap( tree);
+            
+            d3.select("body")
+            .selectAll(".node")
+            .data( tree.leaves())
+            .enter()
+            .append("div")
+            .attr("class", "node")
+            .attr("title", function(d) { return d.data.id; })
+            .style("left", function(d) { return d.x0 + "px"; })
+            .style("top", function(d) { return d.y0 + "px"; })
+            .style("width", function(d) { return d.x1 - d.x0 + "px"; })
+            .style("height", function(d) { return d.y1 - d.y0 + "px"; })
+            .style("background", "#123456")
+            // text
+            .append( "div")
+            .attr("class", "text-node")
+            .text( function( d) { return d.data.id; });
+        }
+        
+        
+        // orientation change
+        window.addEventListener( "orientationchange", function() {
+            // TODO: with appropriate expire headers - a reload won't hit the server again!
+            // hack to force page reload (and thus proper d3 scaling)
+            location.reload();
+        });
+        
+        // resize
+        window.addEventListener( "resize", function() {
+            // TODO: only relevant for Desktop resizing
+            // iOS Safari seems to have a bug which infinitely calls this event
+        });
+        
+        // main
+        draw();
+    </script>
+</body>
+</html>
+
