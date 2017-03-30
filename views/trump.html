@@ -52,8 +52,7 @@
 
 <body>
     <p id="msg"></p>
-    <div>
-        <svg></svg>
+    <div id="container">
     </div>
     
     <script type="text/javascript">
@@ -148,7 +147,7 @@
             tree.sum( function(d) { return d.value; });
             treemap( tree);
             
-            d3.select("body")
+            d3.select("#container")
             .selectAll(".node")
             .data( tree.leaves())
             .enter()
@@ -179,12 +178,27 @@
             .attr("class", "text-node")
             .text( function( d) { return d.data.id; });
             
+            function onMsgClick() {
+                /*
+                 #container {
+                 transform-origin: right top;
+                 transition-duration: 3s;
+                 transform: scale( 0.10, 0.10);
+                 
+                 }
+                 */
+                let container = document.getElementById( "container");
+                container.style.transformOrigin = "right top";
+                container.style.transitionDuration = "3s";
+                container.style.transform = "scale( 0.10, 0.10)";
+            }
+            
             // UI
             let msgP = document.getElementById( "msg");
             msgP.textContent = getOrientation();
+            msgP.addEventListener( "click", onMsgClick, true);
             console.log( getOrientation());
         }
-    
     
         function animate( index, nodes) {
             for( var j = 0; j < nodes.length; j++) {
