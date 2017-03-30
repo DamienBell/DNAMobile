@@ -1,6 +1,7 @@
 <html>
 <head>
 <title>Demo #1 (Treemap)</title>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <!-- iOS -->
 <meta name="apple-mobile-web-app-capable" content="yes">
 <!-- Chrome for Android -->
@@ -35,8 +36,10 @@
     }
 
     .scalable {
-        transition-duration: 1.5s;
-        transform: scale( 2, 2);
+        transition-duration: 0.5s;
+        transform: scale( 1.5, 1.5);
+        border: 2px solid black;
+        z-index: 100;
     }
     </style>
 </head>
@@ -70,6 +73,10 @@
         }
     </script>
     <script type="text/javascript">
+        var currNode = null;
+        var identifier = null;
+        var tree = null;
+        
         // populate from categories.json
         var children = [];
         var i = 1;
@@ -82,6 +89,39 @@
         var data = { "name": "rect", "children": children};
         var svg = d3.select( "svg");
         
+        function onTouchStart( d) {
+            let node = d3.select( this);
+            console.log( "touch: " + node.node().id);
+            console.log( "on start: " + d.data.id);
+        }
+        
+        function onTouch( d) {
+            console.log( "onTouch: " + d);
+            d3.event.preventDefault();
+            
+            let node = d3.select( this);
+            //let isScalable = node.classed( "scalable");
+            
+            if ( identifier !== node.node().id) {
+                // descale old node
+                if ( currNode) {
+                    currNode.classed( "node", true).classed( "scalable", false);
+                }
+                
+                // swap and scale new node
+                currNode = node;
+                identifier = node.node().id;
+                console.log( "new node- " + identifier);
+                currNode.classed( "node", true).classed( "scalable", true);
+            }
+        }
+    
+        function onTouchEnd() {
+            d3.event.preventDefault();
+            
+            console.log( "touchEnd");
+        }
+    
         function draw() {
             var width =  window.innerWidth,
             height = window.innerHeight
@@ -96,10 +136,10 @@
             .round( true)
             .paddingInner( 5);
             
-            var tree = d3.hierarchy( data);
+            // global
+            tree = d3.hierarchy( data);
             // sum before we pass to treemap()
             tree.sum( function(d) { return d.value; });
-            
             treemap( tree);
             
             d3.select("body")
@@ -114,14 +154,17 @@
             .style("top", function(d) { return d.y0 + "px"; })
             .style("width", function(d) { return d.x1 - d.x0 + "px"; })
             .style("height", function(d) { return d.y1 - d.y0 + "px"; })
+            // touch events
+            .on("touchstart", onTouchStart)
+            .on("touchmove", onTouch)
+            .on("touchend", onTouchEnd)
             // click
             .on( "click", function( d){
-               console.log( d.data.id);
+                console.log( d.data.id);
                 let node = d3.select( this);
                 let isScalable = node.classed( "scalable");
                 
-                node.classed( "node", true)
-                .classed( "scalable", !isScalable);
+                node.classed( "node", true).classed( "scalable", !isScalable);
             })
             // color via d.data.total
             .style("background", function(d) { return color( d.data.total); })
@@ -136,7 +179,38 @@
             console.log( getOrientation());
         }
     
-        
+    
+        function animate( index, nodes) {
+            for( var j = 0; j < nodes.length; j++) {
+                nodes[ j].className = "node";
+            }
+            
+            if (index < nodes.length) {
+                let n = nodes[ index];
+                n.className = "node scalable";
+            }
+        }
+
+        // http://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
+        function shuffle( array) {
+            var currentIndex = array.length, temporaryValue, randomIndex;
+            
+            // While there remain elements to shuffle...
+            while (0 !== currentIndex) {
+                
+                // Pick a remaining element...
+                randomIndex = Math.floor(Math.random() * currentIndex);
+                currentIndex -= 1;
+                
+                // And swap it with the current element.
+                temporaryValue = array[currentIndex];
+                array[currentIndex] = array[randomIndex];
+                array[randomIndex] = temporaryValue;
+            }
+            
+            return array;
+        }
+    
         // orientation change
         window.addEventListener( "orientationchange", function() {
             // TODO: with appropriate expire headers - a reload won't hit the server again!
@@ -150,8 +224,29 @@
             // iOS Safari seems to have a bug which infinitely calls this event
         });
         
-        // main
-        draw();
+        window.addEventListener( "load", function() {
+            // main
+            draw();
+                                
+            // [ 500, 1000)
+            let counter = 0;
+            let interval = 0;
+            let nodes = document.getElementsByClassName( "node");
+            let indices = shuffle( [0,1,2,3,4,5,6,7,8,9,10,11,12,13]);
+                                
+            for( var index = 0; index < nodes.length+1; index++) {
+                // 500 per transition-duration in .scalable
+                interval = interval + ((Math.random() * 500) + 500);
+                          
+                let i = indices[ index];
+                // preserve index value within closure with immediately invoked function
+                (function( index) {
+                    window.setTimeout( function() {
+                        animate( index, nodes);
+                    }, interval);
+                })( i);
+            }
+        });
     </script>
 </body>
 </html>
