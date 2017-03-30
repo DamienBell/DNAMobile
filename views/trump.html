@@ -21,6 +21,7 @@
         position: absolute;
         /* why? */
         overflow: hidden;
+        opacity: 0.5;
     }
 
     .text-node {
@@ -31,8 +32,12 @@
 
     #msg {
         font-size: 5em;
-        color: #000;
+        color: black;
         text-align: center;
+        z-index: 200;
+        position: absolute;
+        top: 100;
+        left: 200;
     }
 
     .scalable {
@@ -40,6 +45,7 @@
         transform: scale( 1.5, 1.5);
         border: 2px solid black;
         z-index: 100;
+        opacity: 1;
     }
     </style>
 </head>
@@ -182,12 +188,15 @@
     
         function animate( index, nodes) {
             for( var j = 0; j < nodes.length; j++) {
-                nodes[ j].className = "node";
+                nodes[ j].className = "node opacity-light";
             }
             
             if (index < nodes.length) {
                 let n = nodes[ index];
                 n.className = "node scalable";
+                
+                let msg = document.getElementById( "msg");
+                msg.textContent = nodes[ index].id;
             }
         }
 
@@ -236,7 +245,7 @@
                                 
             for( var index = 0; index < nodes.length+1; index++) {
                 // 500 per transition-duration in .scalable
-                interval = interval + ((Math.random() * 500) + 500);
+                interval = interval + ((Math.random() * 500) + 700);
                           
                 let i = indices[ index];
                 // preserve index value within closure with immediately invoked function
