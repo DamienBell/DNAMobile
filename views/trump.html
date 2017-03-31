@@ -1,6 +1,7 @@
 <html>
 <head>
 <title>Demo #1 (Treemap)</title>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <!-- iOS -->
 <meta name="apple-mobile-web-app-capable" content="yes">
 <!-- Chrome for Android -->
@@ -20,6 +21,7 @@
         position: absolute;
         /* why? */
         overflow: hidden;
+        opacity: 0.5;
     }
 
     .text-node {
@@ -27,35 +29,111 @@
         color: #fff;
         text-align: center;
     }
+
+    #msg {
+        font-size: 5em;
+        color: black;
+        text-align: center;
+        z-index: 200;
+        position: absolute;
+        top: 100;
+        left: 200;
+    }
+
+    .scalable {
+        transition-duration: 0.5s;
+        transform: scale( 1.5, 1.5);
+        border: 2px solid black;
+        z-index: 100;
+        opacity: 1;
+    }
     </style>
 </head>
 
 <body>
-    <p id="orientation" style="position: absolute; left: 200px; top: 200px; z-index: 100; font-size: 2em;"></p>
-    <div style="border: 1px solid red;">
-        <svg></svg>
+    <p id="msg"></p>
+    <div id="container">
     </div>
     
     <script type="text/javascript">
+        function __resolveOrientation( angle) {
+            // http://www.williammalone.com/articles/html5-javascript-ios-orientation/
+            angle = Math.abs( angle);
+            return ( angle === 90) ? "landscape" : "portrait";
+        }
+    
+        function getOrientation() {
+            let orientation = "";
+            if ( window.screen && window.screen.orientation && window.screen.orientation.type) {
+                orientation = window.screen.orientation.type;
+                // string replace
+                orientation = orientation.replace( "-primary", "");
+            }
+            // 0 is a "falsy" value
+            if ( window.orientation || window.orientation === 0) {
+                orientation = __resolveOrientation( window.orientation);
+            }
+            
+            return orientation;
+        }
+    </script>
+    <script type="text/javascript">
+        var currNode = null;
+        var identifier = null;
+        var tree = null;
+        
         // populate from categories.json
         var children = [];
         var i = 1;
         for (var key of Object.keys( categories)) {
                 let category = categories[ key];
                 let count = category.count;
-                children.push( { id: key, value: count});
+                children.push( { id: key, value: count, percentage: category.percent_overall, total: category.total });
                 i = i+1;
         }
         var data = { "name": "rect", "children": children};
         var svg = d3.select( "svg");
         
+        function onTouchStart( d) {
+            let node = d3.select( this);
+            console.log( "touch: " + node.node().id);
+            console.log( "on start: " + d.data.id);
+        }
+        
+        function onTouch( d) {
+            console.log( "onTouch: " + d);
+            d3.event.preventDefault();
+            
+            let node = d3.select( this);
+            //let isScalable = node.classed( "scalable");
+            
+            if ( identifier !== node.node().id) {
+                // descale old node
+                if ( currNode) {
+                    currNode.classed( "node", true).classed( "scalable", false);
+                }
+                
+                // swap and scale new node
+                currNode = node;
+                identifier = node.node().id;
+                console.log( "new node- " + identifier);
+                currNode.classed( "node", true).classed( "scalable", true);
+            }
+        }
+    
+        function onTouchEnd() {
+            d3.event.preventDefault();
+            
+            console.log( "touchEnd");
+        }
+    
         function draw() {
             var width =  window.innerWidth,
             height = window.innerHeight
             svg = svg.attr( "width", width)
                 .attr( "height", height);
             
-            //alert( width + " x " + height);
+            let color = d3.scaleOrdinal( d3.schemeCategory20c);
             
             var treemap = d3.treemap()
             .tile( d3.treemapResquarify)
@@ -63,31 +141,99 @@
             .round( true)
             .paddingInner( 5);
             
-            var tree = d3.hierarchy( data);
+            // global
+            tree = d3.hierarchy( data);
             // sum before we pass to treemap()
             tree.sum( function(d) { return d.value; });
-            
             treemap( tree);
             
-            d3.select("body")
+            d3.select("#container")
             .selectAll(".node")
             .data( tree.leaves())
             .enter()
             .append("div")
             .attr("class", "node")
+            .attr("id", function( d){ return d.data.id; })
             .attr("title", function(d) { return d.data.id; })
             .style("left", function(d) { return d.x0 + "px"; })
             .style("top", function(d) { return d.y0 + "px"; })
             .style("width", function(d) { return d.x1 - d.x0 + "px"; })
             .style("height", function(d) { return d.y1 - d.y0 + "px"; })
-            .style("background", "#123456")
+            // touch events
+            .on("touchstart", onTouchStart)
+            .on("touchmove", onTouch)
+            .on("touchend", onTouchEnd)
+            // click
+            .on( "click", function( d){
+                console.log( d.data.id);
+                let node = d3.select( this);
+                let isScalable = node.classed( "scalable");
+                
+                node.classed( "node", true).classed( "scalable", !isScalable);
+            })
+            // color via d.data.total
+            .style("background", function(d) { return color( d.data.total); })
             // text
             .append( "div")
             .attr("class", "text-node")
             .text( function( d) { return d.data.id; });
+            
+            function onMsgClick() {
+                /*
+                 #container {
+                 transform-origin: right top;
+                 transition-duration: 3s;
+                 transform: scale( 0.10, 0.10);
+                 
+                 }
+                 */
+                let container = document.getElementById( "container");
+                container.style.transformOrigin = "right top";
+                container.style.transitionDuration = "3s";
+                container.style.transform = "scale( 0.10, 0.10)";
+            }
+            
+            // UI
+            let msgP = document.getElementById( "msg");
+            msgP.textContent = getOrientation();
+            msgP.addEventListener( "click", onMsgClick, true);
+            console.log( getOrientation());
         }
-        
-        
+    
+        function animate( index, nodes) {
+            for( var j = 0; j < nodes.length; j++) {
+                nodes[ j].className = "node opacity-light";
+            }
+            
+            if (index < nodes.length) {
+                let n = nodes[ index];
+                n.className = "node scalable";
+                
+                let msg = document.getElementById( "msg");
+                msg.textContent = nodes[ index].id;
+            }
+        }
+
+        // http://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
+        function shuffle( array) {
+            var currentIndex = array.length, temporaryValue, randomIndex;
+            
+            // While there remain elements to shuffle...
+            while (0 !== currentIndex) {
+                
+                // Pick a remaining element...
+                randomIndex = Math.floor(Math.random() * currentIndex);
+                currentIndex -= 1;
+                
+                // And swap it with the current element.
+                temporaryValue = array[currentIndex];
+                array[currentIndex] = array[randomIndex];
+                array[randomIndex] = temporaryValue;
+            }
+            
+            return array;
+        }
+    
         // orientation change
         window.addEventListener( "orientationchange", function() {
             // TODO: with appropriate expire headers - a reload won't hit the server again!
@@ -101,8 +247,29 @@
             // iOS Safari seems to have a bug which infinitely calls this event
         });
         
-        // main
-        draw();
+        window.addEventListener( "load", function() {
+            // main
+            draw();
+                                
+            // [ 500, 1000)
+            let counter = 0;
+            let interval = 0;
+            let nodes = document.getElementsByClassName( "node");
+            let indices = shuffle( [0,1,2,3,4,5,6,7,8,9,10,11,12,13]);
+                                
+            for( var index = 0; index < nodes.length+1; index++) {
+                // 500 per transition-duration in .scalable
+                interval = interval + ((Math.random() * 500) + 700);
+                          
+                let i = indices[ index];
+                // preserve index value within closure with immediately invoked function
+                (function( index) {
+                    window.setTimeout( function() {
+                        animate( index, nodes);
+                    }, interval);
+                })( i);
+            }
+        });
     </script>
 </body>
 </html>
