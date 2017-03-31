@@ -18,11 +18,14 @@
 .portfolio-section .underlined-title hr{
   margin: 15px 40% 0px 40%;
 }
-.portfolio-section .gallery-item img{
+.portfolio-img{
   width: auto;
   margin: auto;
   max-height: 420px;
 }
 .portfolio-section .gallery-item h5{
   text-align: center;
+}
+.portfolio-row{
+ margin-bottom: 15px;
 }
