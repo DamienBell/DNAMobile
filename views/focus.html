@@ -56,16 +56,18 @@
           template: '<li>{{ todo.text }}</li>'
         });
 
+        GROCERIES = [
+          { text: 'Vegetables' },
+          { text: 'Cheese' },
+          { text: 'Whatever else humans are supposed to eat' }
+        ];
 				jQuery(document).ready(function() {
 
-          GROCIERIES = new Vue({
+
+          var app = new Vue({
             el: '#app-7',
             data: {
-              groceryList: [
-                { text: 'Vegetables' },
-                { text: 'Cheese' },
-                { text: 'Whatever else humans are supposed to eat' }
-              ]
+              groceryList: GROCERIES
             }
           })
 				});	//ready

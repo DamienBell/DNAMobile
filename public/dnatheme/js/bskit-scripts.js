@@ -4,7 +4,6 @@
 
 $(document).ready(function() {
 	//var foo = initMaps();
-
 	//Gallery
 	var foo =  $('.gallery-zoom').magnificPopup({
 		type: 'image'
