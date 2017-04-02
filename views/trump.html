@@ -9,11 +9,20 @@
 
 <script src="categories.json"></script>
 <script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js" async></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" async></script>
+<script type="mustache/template" id="annotation-tmpl">
+    {{ #annotations }}
+        <div class="annotation">
+            <blockquote>{{ quote }}</blockquote>
+        </div>
+    {{ /annotations }}
+</script>
 <style>
     body {
         margin: auto;
         position: relative;
-        /*background: #000;*/
+        background: #000;
     }
 
     .node {
@@ -31,19 +40,14 @@
     }
 
     #msg {
-        font-size: 5em;
         color: black;
-        text-align: center;
         z-index: 200;
-        position: absolute;
-        top: 100;
-        left: 200;
+        margin-right: auto;
+        margin-left: auto;
+        width: 5em;
     }
 
     .scalable {
-        transition-duration: 0.5s;
-        transform: scale( 1.5, 1.5);
-        border: 2px solid black;
         z-index: 100;
         opacity: 1;
     }
@@ -139,7 +143,7 @@
             .tile( d3.treemapResquarify)
             .size( [width, height])
             .round( true)
-            .paddingInner( 5);
+            .paddingInner( 10);
 
             // global
             tree = d3.hierarchy( data);
@@ -191,6 +195,12 @@
                 container.style.transformOrigin = "right top";
                 container.style.transitionDuration = "3s";
                 container.style.transform = "scale( 0.10, 0.10)";
+
+                // related content
+                let template = document.getElementById( "annotation-tmpl").textContent;
+                let rendered = Mustache.render( template, { "annotations": categories[ "Immigration"].related});
+
+                $( this).append( rendered);
             }
 
             // UI
