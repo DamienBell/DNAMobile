@@ -25,9 +25,8 @@ app.get("/demos/focus", function (request, response) {
 });
 // could also use the POST body instead of query string: http://expressjs.com/en/api.html#req.body
 app.get("/trump", function (request, response) {
-    response.sendFile(__dirname + '/views/trump.html');
+    response.sendFile(__dirname + '/views/trump.blog.html');
 });
-
 
 // listen for requests :)
 var listener = app.listen(process.env.PORT || 3000, function () {

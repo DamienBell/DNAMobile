@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" style="height:100%;">
+    <head>
+        <meta charset="utf-8">
+        <title>Make it Mobile</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <link rel="shortcut icon" href="ico/favicon.png">
+        <!-- Core CSS -->
+        <link href="/dnatheme/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/dnatheme/css/font-awesome.min.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,500,600,700,900,' rel='stylesheet' type='text/css'>
+
+        <!-- Style Library -->
+        <link href="/dnatheme/css/style.css" rel="stylesheet">
+        <link href="/dnatheme/css/components.css" rel="stylesheet">
+
+
+        <style>
+            #chart-container {
+                margin: auto;
+                position: relative;
+                /*background: #000;*/
+            }
+
+            .node {
+                box-sizing: border-box;
+                position: absolute;
+                /* why? */
+                overflow: hidden;
+                opacity: 0.5;
+            }
+
+            .text-node {
+                font-size: 1.5em;
+                color: #fff;
+                text-align: center;
+                position: relative;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            #msg {
+                font-size: 5em;
+                color: black;
+                text-align: center;
+                z-index: 200;
+                position: absolute;
+                top: 100;
+                left: 200;
+            }
+
+            .scalable {
+                transition-duration: 0.5s;
+                transform: scale( 1.5, 1.5);
+                border: 2px solid black;
+                z-index: 100;
+                opacity: 1;
+            }
+
+          .modal-mask {
+            position: fixed;
+            z-index: 9998;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, .5);
+            display: table;
+            transition: opacity .3s ease;
+          }
+
+          .modal-wrapper {
+            display: table-cell;
+            vertical-align: middle;
+          }
+
+          .modal-container {
+            width: 92%;
+            max-height: 98vh;
+            overflow: scroll;
+            margin: 0px auto;
+            padding: 20px 30px;
+            background-color: #fff;
+            border-radius: 2px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
+            transition: all .3s ease;
+            font-family: Helvetica, Arial, sans-serif;
+          }
+
+          .modal-header h3 {
+            margin-top: 0;
+            color: #42b983;
+          }
+
+          .modal-body {
+            margin: 20px 0;
+          }
+
+          .modal-default-button {
+            float: right;
+          }
+
+          /*
+           * The following styles are auto-applied to elements with
+           * transition="modal" when their visibility is toggled
+           * by Vue.js.
+           *
+           * You can easily play with the modal transition by editing
+           * these styles.
+           */
+
+          .modal-enter {
+            opacity: 0;
+          }
+
+          .modal-leave-active {
+            opacity: 0;
+          }
+
+          .modal-enter .modal-container,
+          .modal-leave-active .modal-container {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+          }
+
+          .quotes{
+            /*max-height: 80vh;
+            overflow: scroll;*/
+          }
+          .quotes blockquote{
+            font-size: smaller;
+            padding: 2px 10px;
+            margin: 0 0 10px;
+          }
+            </style>
+    </head>
+    <body>
+
+    <section id="content" class="content">
+      <p id="orientation"></p>
+
+      <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+              <div class="underlined-title">
+              <h1><span class="aqua">Make</span>It<span class="aqua">Mobile</span></h1>
+              <hr>
+              <section>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+              </section>
+            </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-sm-12">
+            <div class="underlined-title">
+            <h1><span class="aqua">Make</span>It<span class="aqua">Mobile</span></h1>
+            <hr>
+            <section>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+            </section>
+          </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+          <div class="underlined-title">
+          <h1><span class="aqua">Make</span>It<span class="aqua">Mobile</span></h1>
+          <hr>
+          <section>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+          </section>
+        </div>
+      </div>
+  </div>
+      <div class="container">
+
+      <!--- chart area -->
+      <div id="chart-container">
+        <div id="container"></div>
+      </div>
+
+      <!-- details area -->
+      <section id="active-modal">
+
+        <!-- use the modal component, pass in the prop -->
+        <modal v-if="showModal" @close="showModal = false">
+          <!--
+            you can use custom content here to overwrite
+            default content
+          -->
+          <h3 slot="header" v-bind:style="styleObject">{{info.category}}</h3>
+          <div slot="body">
+            <div class="row">
+              <div class="col-sm-4">
+                score : <h4>{{score}}  {{color}}</h4>
+              </div>
+              <div class="col-sm-4">
+                count: <h4>{{info.count}}</h4>
+              </div>
+              <div class="col-sm-4">
+                percent: <h4>{{percent}}%</h4>
+              </div>
+            </div>
+            <div class="quotes">
+              <ul>
+                <li v-for="item in info.related">
+                    <blockquote>"{{item.quote}}""</blockquote>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </modal>
+      </section>
+
+    </section>
+    <!-- template for the modal component -->
+    <script type="text/x-template" id="modal-template">
+      <transition name="modal">
+        <div class="modal-mask" @click="$emit('close')">
+          <div class="modal-wrapper">
+            <div class="modal-container">
+
+              <div class="modal-header">
+                <slot name="header">
+                  default header
+                </slot>
+              </div>
+
+              <div class="modal-body">
+                <slot name="body">
+                  default body
+                </slot>
+              </div>
+
+              <div class="modal-footer">
+                <slot name="footer">
+                  <button class="modal-default-button" @click="$emit('close')">
+                    OK
+                  </button>
+                </slot>
+              </div>
+            </div>
+          </div>
+        </div>
+      </transition>
+    </script>
+		<script type="text/javascript" src="/dnatheme/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/dnatheme/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/lib/vue.min.js"></script>
+    <script type="text/javascript" src="/lib/underscore.min.js"></script>
+    <script src="categories.json"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script type="text/javascript" src="/trump/trump.blog.js" defer></script>
+</body>
+</html>
