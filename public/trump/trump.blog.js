@@ -140,10 +140,16 @@ function draw() {
     .append( "div")
     .attr("class", "title-node")
     .text( function( d) { return d.data.id; })
+    .style("color", function(d) {
+           return "black";
+    })
     .append( "div")
     .attr("class", "percent-node")
     .text( function( d) {
        return Math.round( (d.data.percentage * 100)).toFixed( 0)+"%"
+    })
+    .style("color", function(d) {
+           return "black";
     });
 }
 
