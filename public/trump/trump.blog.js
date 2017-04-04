@@ -40,7 +40,7 @@ var InfoModal = new Vue({
     percent: function(){
       if(this.info){
         if(this.info.percent_overall){
-          return (this.info.percent_overall * 100).toFixed(2);
+          return Math.round( this.info.percent_overall * 100).toFixed( 0);
         }
       }
       return 0;
