@@ -29,3 +29,17 @@
 .portfolio-row{
  margin-bottom: 15px;
 }
+
+.center-text{
+  text-align: center;
+}
+
+.underlined-title{
+  padding: 0;
+}
+.content-block{
+ padding: 20px 0 20px 0;
+}
+.content-left p {
+  margin-bottom: 0px;
+}
