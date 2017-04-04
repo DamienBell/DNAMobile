@@ -143,7 +143,7 @@ function draw() {
     .append( "div")
     .attr("class", "percent-node")
     .text( function( d) {
-       return (d.data.percentage * 100).toFixed(2)+"%"
+       return Math.round( (d.data.percentage * 100)).toFixed( 0)+"%"
     });
 }
 
