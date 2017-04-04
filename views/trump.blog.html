@@ -10,7 +10,7 @@
         <!-- Core CSS -->
         <link href="/dnatheme/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="/dnatheme/css/font-awesome.min.css" rel="stylesheet">
-        <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,500,600,700,900," rel="stylesheet" type="text/css">
+        <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,500,600,700,900,' rel='stylesheet' type='text/css'>
 
         <!-- Style Library -->
         <link href="/dnatheme/css/style.css" rel="stylesheet">
@@ -32,14 +32,25 @@
                 opacity: 0.5;
             }
 
-            .text-node {
-                font-size: 1.5em;
+            .title-node {
+                font-size: 1.2em;
+                text-shadow: 0.5px 0.5px #666;
+                font-weight: bold;
                 color: #fff;
                 text-align: center;
                 position: relative;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
+            }
+            .percent-node {
+                font-size: 1em;
+                color: #fff;
+                text-align: center;
+                position: relative;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, 50%);
             }
 
             #msg {
@@ -140,44 +151,41 @@
     <body>
 
     <section id="content" class="content">
-      <p id="orientation"></p>
-      <div class="row">
-          <div class="col-sm-12">
-            <div class="underlined-title">
-            <h1><span class="aqua">Applause</span> As <span class="aqua">Feedback</span></h1>
-            <hr>
-            <section>On Feb 28, 2017 President Trump addressed a joint session of Congress. His speech ran for over an hour and was received by Congress with much applause.</section>
-            <br/>
-            <section>At MakeItMobile, we've done the hard work of annotating the entire speech.</section>
-            <p>We documented all the applauses and their preceding quotes as well.</p>
-            <p>And we've categorized every quote into a number of categories:</p>
-            <ul>
-                <li>Immigration</li>
-                <li>Education</li>
-                <li>Healthcare</li>
-            </ul>
-            <p>….to name a few.</p>
-            <p>We've also calculated a "score" for each applause.</p>
-            <p>Together - we're able to visualize the overarching themes of the speech and feedback from Congress, in the form of applause.</p>
-            </div>
-        </div>
-    </div>
-      <div class="container">
+      <span id="orientation"></span>
 
-      <!--- chart area -->
-      <div id="chart-container">
-        <div id="container"></div>
+      <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+              <div class="underlined-title">
+                <h2><span class="aqua">Make</span>It<span class="aqua">Mobile</span></h2>
+                <hr>
+              </div>
+              <section>
+                <h3>Measuring applause</h3>
+                <p>On Feb 28, 2017 President Trump addressed a joint session of Congress.
+                   </p>
+                <p>At MakeItMobile, we've done the hard work of annotating the entire speech.
+                    We documented all the applauses and their preceding quote as well.</p>
+
+                  <p>We've categorized every quote into a number of categories.
+Immigration, Education, Healthcare….to name a few.
+
+And we've calculated a "score" for each applause.
+
+Together - we're able to visualize the overarching themes of the speech and feedback from Congress, in the form of applause.</p>
+              </section>
+          </div>
+        </div>
       </div>
+      <!--- chart area -->
+       <div id="chart-container">
+         <div id="container"></div>
+       </div>
 
       <!-- details area -->
       <section id="active-modal">
-
         <!-- use the modal component, pass in the prop -->
         <modal v-if="showModal" @close="showModal = false">
-          <!--
-            you can use custom content here to overwrite
-            default content
-          -->
           <h3 slot="header" v-bind:style="styleObject">{{info.category}}</h3>
           <div slot="body">
             <div class="row">

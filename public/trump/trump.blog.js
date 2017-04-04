@@ -23,19 +23,18 @@ function getOrientation() {
 Vue.component('modal', {
   template: '#modal-template'
 });
-
-// start app
+//we'll be using a global modal, so init with empty Vue for now
 var InfoModal = new Vue({
   el: '#active-modal',
   props: {
     showModal: Boolean,
     info: Object,
     styleObject: Object,
-    color: String
+    color: String,
   },
   data: {
     showModal: false,
-    color: "#CCC"
+    color: "#CCC",
   },
   computed: {
     percent: function(){
@@ -57,15 +56,13 @@ var InfoModal = new Vue({
         return {color: this.color};
       }
       return {color: "#ccc"};
+    },
+    foo: function(){
+      return "A FOO"
     }
   }
 });
-
-var currNode = null;
-var identifier = null;
-var tree = null;
-
-// populate from categories.json
+//populate from categories.json
 var children = [];
 var i = 1;
 for (var key of Object.keys( categories)) {
@@ -84,13 +81,6 @@ for (var key of Object.keys( categories)) {
 var data = { "name": "rect", "children": children};
 var svg = d3.select( "svg");
 
-function closeGraph() {
-    let container = document.getElementById( "container");
-    container.style.transformOrigin = "right top";
-    container.style.transitionDuration = "3s";
-    container.style.transform = "scale( 0.10, 0.10)";
-}
-
 function expandNodeDetails(node){
   let $elem      = $(node.node());
   let background = $elem[0].style.background
@@ -100,32 +90,11 @@ function expandNodeDetails(node){
   let info       = node.data()[0].data.info;
 
   InfoModal.info      = node.data()[0].data.info;
-  //InfoModal.color     = d3.color(info.total);
   InfoModal.showModal = true;
 }
 
 function didTapNode(d){
   expandNodeDetails(d3.select( this));
-}
-
-function onTouch( d) {
-    console.log( "onTouch: " + d);
-    d3.event.preventDefault();
-
-    let node = d3.select( this);
-
-    if ( identifier !== node.node().id) {
-        // descale old node
-        if ( currNode) {
-            currNode.classed( "node", true).classed( "scalable", false);
-        }
-
-        // swap and scale new node
-        currNode = node;
-        identifier = node.node().id;
-        console.log( "new node- " + identifier);
-        currNode.classed( "node", true).classed( "scalable", true);
-    }
 }
 
 function draw() {
@@ -140,10 +109,9 @@ function draw() {
     .tile( d3.treemapResquarify)
     .size( [width, height])
     .round( true)
-    .paddingInner( 5);
+    .paddingInner(1);
 
-    // global
-    tree = d3.hierarchy( data);
+    let tree = d3.hierarchy( data);
     // sum before we pass to treemap()
     tree.sum( function(d) { return d.value; });
     treemap( tree);
@@ -166,58 +134,17 @@ function draw() {
     .on( "click", didTapNode)
     // color via d.data.total
     .style("background", function(d) {
-          return color( d.data.total);
+        return color( d.data.total);
     })
     // text
     .append( "div")
-    .attr("class", "text-node")
-    .text( function( d) { return d.data.id; });
-
-    function onMsgClick() {
-
-        let container = document.getElementById( "container");
-        container.style.transformOrigin = "right top";
-        container.style.transitionDuration = "3s";
-        container.style.transform = "scale( 0.10, 0.10)";
-    }
-    // UI
-    let msgP = document.getElementById("orientation");
-    msgP.textContent = getOrientation();
-    console.log( getOrientation());
-}
-
-function animate( index, nodes) {
-    for( var j = 0; j < nodes.length; j++) {
-        nodes[ j].className = "node opacity-light";
-    }
-
-    if (index < nodes.length) {
-        let n = nodes[ index];
-        n.className = "node scalable";
-
-        let msg = document.getElementById( "msg");
-        msg.textContent = nodes[ index].id;
-    }
-}
-
-// http://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
-function shuffle( array) {
-    var currentIndex = array.length, temporaryValue, randomIndex;
-
-    // While there remain elements to shuffle...
-    while (0 !== currentIndex) {
-
-        // Pick a remaining element...
-        randomIndex = Math.floor(Math.random() * currentIndex);
-        currentIndex -= 1;
-
-        // And swap it with the current element.
-        temporaryValue = array[currentIndex];
-        array[currentIndex] = array[randomIndex];
-        array[randomIndex] = temporaryValue;
-    }
-
-    return array;
+    .attr("class", "title-node")
+    .text( function( d) { return d.data.id; })
+    .append( "div")
+    .attr("class", "percent-node")
+    .text( function( d) {
+       return (d.data.percentage * 100).toFixed(2)+"%"
+    });
 }
 
 // orientation change
