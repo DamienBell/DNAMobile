@@ -157,22 +157,16 @@
         <div class="row">
             <div class="col-sm-12">
               <div class="underlined-title">
-                <h2><span class="aqua">Make</span>It<span class="aqua">Mobile</span></h2>
+                <h2><span class="aqua">Make</span> It <span class="aqua">Mobile</span></h2>
                 <hr>
               </div>
               <section>
-                <h3>Measuring applause</h3>
-                <p>On Feb 28, 2017 President Trump addressed a joint session of Congress.
-                   </p>
-                <p>At MakeItMobile, we've done the hard work of annotating the entire speech.
-                    We documented all the applauses and their preceding quote as well.</p>
-
-                  <p>We've categorized every quote into a number of categories.
-Immigration, Education, Healthcare….to name a few.
-
-And we've calculated a "score" for each applause.
-
-Together - we're able to visualize the overarching themes of the speech and feedback from Congress, in the form of applause.</p>
+                <h3>Applause as Feedback</h3>
+                <p>On Feb 28, 2017 President Trump addressed a joint session of Congress.</p>
+                <p>At MakeItMobile, we've done the hard work of annotating the entire speech. We documented all the applauses and their preceding quote as well.</p>
+                <p>We've categorized every quote into a number of categories. Immigration, Education, Healthcare….to name a few.<p>
+                <p>And we've calculated a "score" for each applause.</p>
+                <p>Together - we're able to visualize the overarching themes of the speech and feedback from Congress, in the form of applause.</p>
               </section>
           </div>
         </div>
@@ -190,13 +184,12 @@ Together - we're able to visualize the overarching themes of the speech and feed
           <div slot="body">
             <div class="row">
               <div class="col-sm-4">
-                score : <h4>{{score}}  {{color}}</h4>
+                Quotes
+                <h4>{{info.count}}</h4>
               </div>
               <div class="col-sm-4">
-                count: <h4>{{info.count}}</h4>
-              </div>
-              <div class="col-sm-4">
-                percent: <h4>{{percent}}%</h4>
+                Percent
+                <h4>{{percent}}%</h4>
               </div>
             </div>
             <div class="quotes">
