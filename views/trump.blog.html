@@ -6,7 +6,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="keywords" content="" />
         <meta name="description" content="" />
-        <link rel="shortcut icon" href="ico/favicon.png">
+        <!-- Open Graph -->
+        <meta property="og:url"                content="http://makeitmobile.co/trump" />
+        <meta property="og:type"               content="article" />
+        <meta property="og:title"              content="Congress 'Applauds' President Trump" />
+        <meta property="og:description"        content="Which issues are most important to Congress?" />
+        <meta property="og:image"              content="http://makeitmobile.co/trump/treemap.png" />
+        <meta property="og:locale"             content="en_US" />
+
         <!-- Core CSS -->
         <link href="/dnatheme/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="/dnatheme/css/font-awesome.min.css" rel="stylesheet">
@@ -17,6 +24,7 @@
         <link href="/dnatheme/css/components.css" rel="stylesheet">
 
 
+        <link rel="shortcut icon" href="ico/favicon.png">
         <style>
             #chart-container {
                 margin: auto;
@@ -154,6 +162,19 @@
           .row {
               padding: 1.5em;
           }
+        
+            ul li {
+                display: inline;
+            }
+        ul li a {
+            color: #A9A9A9;
+            font-size: 1.1em;
+            padding: 0 0.5em;
+        }
+        
+            li a:hover {
+                text-decoration: underline;
+            }
             </style>
     </head>
     <body>
@@ -168,6 +189,11 @@
                         <h2><span class="aqua">Make</span> It <span class="aqua">Mobile</span></h2>
                         <hr>
                         <h3>Applause as Feedback</h3>
+                        <ul>
+                            <li><a href="https://twitter.com/intent/tweet?original_referer=http://makeitmobile.co&text=Visualize: President Trump's February speech to Congress&url=http://makeitmobile.co/trump">Twitter</a></li>
+                            <li id="facebook"><a href="">Facebook</a></li>
+                            <li><a href="mailto:?subject=Congress 'Applauds' President Trump">Email</a></li>
+                        </ul>
                     </div>
                 </div>
             <section style="font-size: 1.25em;">
@@ -258,12 +284,44 @@
         </div>
       </transition>
     </script>
-		<script type="text/javascript" src="/dnatheme/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/dnatheme/js/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="/dnatheme/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/lib/vue.min.js"></script>
     <script type="text/javascript" src="/lib/underscore.min.js"></script>
     <script src="categories.json"></script>
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script type="text/javascript" src="/trump/trump.blog.js" defer></script>
+    <script type="text/javascript" async>
+        // https://developers.facebook.com/docs/javascript/examples
+        window.fbAsyncInit = function() {
+            FB.init({
+                    appId      : '1276567009117444',
+                    xfbml      : true,
+                    version    : 'v2.8'
+                    });
+                    FB.AppEvents.logPageView();
+        };
+    
+        (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+         }(document, 'script', 'facebook-jssdk'));
+         
+         $( document).ready( function() {
+            $( "li#facebook a").on( "click", function( event) {
+                 event.preventDefault();
+                
+                 FB.ui({
+                       method: 'share_open_graph',
+                       action_type: 'og.likes',
+                       action_properties: JSON.stringify( {})
+                   }, function( response) {
+                   });
+             });
+        });
+    </script>
 </body>
 </html>
