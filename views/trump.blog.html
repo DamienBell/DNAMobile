@@ -288,8 +288,9 @@
     <script type="text/javascript" src="/dnatheme/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/lib/vue.min.js"></script>
     <script type="text/javascript" src="/lib/underscore.min.js"></script>
-    <script src="categories.json"></script>
-    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script type="text/javascript" src="https://d3js.org/d3.v4.min.js" defer></script>
+    <script type="text/javascript" src="/lib/cookie.js"></script>
+    <script type="text/javascript" src="categories.json" defer></script>
     <script type="text/javascript" src="/trump/trump.blog.js" defer></script>
     <script type="text/javascript" async>
         // https://developers.facebook.com/docs/javascript/examples
@@ -319,7 +320,7 @@
                        action_type: 'og.likes',
                        action_properties: JSON.stringify( {})
                    }, function( response) {
-                   });
+                 });
              });
         });
     </script>

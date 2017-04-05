@@ -80,6 +80,8 @@ for (var key of Object.keys( categories)) {
 
 var data = { "name": "rect", "children": children};
 var svg = d3.select( "svg");
+let TapsToTrigger = 3;
+var totalTaps = 0;
 
 function expandNodeDetails(node){
   let $elem      = $(node.node());
@@ -94,7 +96,17 @@ function expandNodeDetails(node){
 }
 
 function didTapNode(d){
-  expandNodeDetails(d3.select( this));
+    totalTaps = totalTaps + 1;
+    // haven't already requested
+    if ( totalTaps === TapsToTrigger && !Cookies.get( "have-contacted")) {
+        Cookies.set( "have-contacted", true);
+        window.setTimeout( function() {
+            alert( "TODO: modal here");
+        }, 3000);
+    }
+    else {
+        expandNodeDetails(d3.select( this));
+    }
 }
 
 function draw() {
