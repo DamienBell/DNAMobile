@@ -105,13 +105,17 @@
             margin-top: 0;
             color: #42b983;
           }
+        
+            div.modal-footer {
+                width: 85%;
+                margin: auto;
+                text-align: center;
+                background: #000;
+                color: #fff;
+            }
 
           .modal-body {
             margin: 20px 0;
-          }
-
-          .modal-default-button {
-            float: right;
           }
 
           /*
@@ -244,11 +248,9 @@
                 </slot>
               </div>
 
-              <div class="modal-footer">
+              <div class="modal-footer" @click="$emit('close')">
                 <slot name="footer">
-                  <button class="modal-default-button" @click="$emit('close')">
-                    OK
-                  </button>
+                  <h4 class="modal-default-button">OK</h4>
                 </slot>
               </div>
             </div>
