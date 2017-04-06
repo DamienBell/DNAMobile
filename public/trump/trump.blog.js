@@ -23,6 +23,68 @@ function getOrientation() {
 Vue.component('modal', {
   template: '#modal-template'
 });
+
+Vue.component('share-component', {
+  template: '#share-template',
+  props: {
+    url: String,
+    subject: String,
+  },
+  computed: {
+    url: function(){
+      return window.location.href;
+    },
+    _subject: function(){
+      if(this.subject){
+        return this.subject
+      }
+      return ""
+    },
+    twitterUrl(){
+      return `https://twitter.com/intent/tweet?original_referer=${this.url}&text=${this._subject}&url=${this.url}`;
+    },
+    emailUrl(){
+      return `mailto:?subject=${this._subject}&body=${this.url}`
+    }
+  },
+  methods: {
+    fbShare(e){
+       FB.ui({
+             method: 'share_open_graph',
+             action_type: 'og.likes',
+             action_properties: JSON.stringify( {})
+         }, function( response) {
+       });
+    }
+  }
+
+});
+
+
+var ShareModal = new Vue({
+  el: '#share-modal',
+  props: {
+    showModal: Boolean,
+    staticURL: String,
+    url: String,
+    subject: String,
+    size: "small"
+  },
+  data: {
+    showModal: false,
+    staticURL: null,
+    url: "some value"
+  },
+  computed: {
+    url: function(){
+      if(this.staticURL){
+        return staticURL;
+      }
+      return window.location.href;
+    },
+  }
+});
+
 //we'll be using a global modal, so init with empty Vue for now
 var InfoModal = new Vue({
   el: '#active-modal',
@@ -31,10 +93,12 @@ var InfoModal = new Vue({
     info: Object,
     styleObject: Object,
     color: String,
+    classObject: Object
   },
   data: {
     showModal: false,
     color: "#CCC",
+    classObject: {large: true}
   },
   computed: {
     percent: function(){
@@ -56,12 +120,18 @@ var InfoModal = new Vue({
         return {color: this.color};
       }
       return {color: "#ccc"};
-    },
-    foo: function(){
-      return "A FOO"
     }
   }
 });
+
+let shareInfo = {
+  subject: "Visualize: President Trump's February speech to Congress"
+}
+var s  = new Vue({
+  el: '#static-share',
+  data: shareInfo
+});
+
 //populate from categories.json
 var children = [];
 var i = 1;
@@ -99,10 +169,8 @@ function didTapNode(d){
     totalTaps = totalTaps + 1;
     // haven't already requested
     if ( totalTaps === TapsToTrigger && !Cookies.get( "have-contacted")) {
-        Cookies.set( "have-contacted", true);
-        window.setTimeout( function() {
-            alert( "TODO: modal here");
-        }, 3000);
+        ShareModal.show = true;
+        Cookies.set( "have-contacted")
     }
     else {
         expandNodeDetails(d3.select( this));
