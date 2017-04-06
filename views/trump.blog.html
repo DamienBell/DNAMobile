@@ -186,9 +186,10 @@
               padding: 1.5em;
           }
 
-            ul li {
-                display: inline;
-            }
+          ul li {
+
+              display: inline;
+          }
         ul li a {
             color: #A9A9A9;
             font-size: 1.1em;
@@ -198,6 +199,31 @@
             li a:hover {
                 text-decoration: underline;
             }
+
+        .black {
+            color: black;
+        }
+
+        span.focus {
+            color: black;
+            text-decoration: underline;
+        }
+
+        .button {
+            border: 1px solid black;
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-family: Roboto, Helvetica, Arial, sans-serif;
+            width: 80%;
+            margin-top: 1em;
+            padding: 0.5em;
+            font-size: 1em;
+        }
+
+        .hidden {
+            display: none;
+        }
             </style>
     </head>
     <body>
@@ -214,32 +240,51 @@
                     </div>
                     <div id="static-share">
                       <share-component subject="Visualize: President Trump's February speech to Congress"></share-component>
+
                     </div>
                 </div>
             <section style="font-size: 1.25em;">
                 <h5 style="text-decoration: underline;">Visualizing Congressional Feedback</h5>
-                <p>On Feb 28, 2017 President Trump addressed a joint session of Congress.<br />
-                The President's speech touched on a number of <span style="text-decoration: underline; color: black;">themes</span> - Immigration, Education, Healthcare along with others</p>
-                <p>And throughout the speech - Congress provided direct feedback through their <span style="color: black;">applause</span></p>
-                <br/>
-                <p>At MakeItMobile, we've done the hard work of annotating the entire speech. Every quote and the followup response from Congress - applause - has been documented</p>
-                <p>Each applause has been given a <span class="aqua">score</span> based on its <span style="text-decoration: underline; color: black;">loundness</span> and its <span style="text-decoration: underline; color: black;">duration</span></p>
-                <p>And by bucketing every applause and its score into a specific theme, i.e. Education, we can get an idea of the issues most important to Congress</p>
-                <br/>
-                <p><span style="color: black;">Long story short</span> - we've created an interactive graphic to explore the themes of President Trump's speech to Congress</p>
-                <br/>
-                <h5 style="text-decoration: underline;">Take this example:</h5>
-                <p>At 29% of all feedback, <span style="color: black;" >Nationalism is the dominant issue of the night</span></p>
-                <p>Conversely, other themes - for example, Infrastructure, received only 1% of all feedback</p>
-                <p>Let's explore!</p>
-                <br/>
-                <h5 style="text-decoration: underline;">FAQ</h5>
-                <h5>How are themes chosen?</h5>
-                <p>We made a full faith effort to objectively categorize each quote into a specific theme</p>
 
-                <h5>How is the score for an applause calculated?</h5>
-                <p>The score for an applause is based on its loudness and its duration. In particular:</p>
-                <h5 style="font-size: 1.5em; margin-left: 3em;"><sup>loudness</sup>&frasl;<sub>( duration )<sup>1.25</sup></sub></h5>
+                <p>On Feb 28, 2017 President Trump addressed Congress for the first time.</p>
+                <p>The President's speech touched on a number of <span class="focus">themes</span> - Immigration, Education, Healthcare and others.</p>
+                <p>And throughout the speech - Congress provided direct feedback on these themes through their <span class="black">applause</span></p>
+                <br/>
+
+                <p>At MakeItMobile, we've done the hard work of annotating the entire speech.</p>
+                <p>We've scored each applause and by tieing each one back to the current theme, we gain insight into the themes, or issues, most prized by Congress.</p>
+                <br/>
+                <p><span class="black">Long story short</span> - we've created an interactive graphic to explore the themes of President Trump's speech and Congress's reaction.</p>
+                <br/>
+
+                <h4 onclick="$( '#how-to-read').toggleClass( 'hidden');">How to Read</h4>
+                <div id="how-to-read" class="hidden">
+                    <p>At <span class="black">29% of all</span> Congressional <span style="color: black;">applause</span>, <span class="black" >Nationalism was the dominant theme of the night.</span></p>
+                    <p>The President alluded to this theme on 18 different occassions and Congress replied with 29% of all the applause it delivered that night.</p>
+
+                    <img id="example-img" src="http://i.imgur.com/CfdFudi.gif" width="80%" height="80%">
+                </div>
+                <h4 onclick="$( '#questions').toggleClass( 'hidden');">Questions</h4>
+                <div id="questions" class="hidden">
+                        <h5>How are themes chosen?</h5>
+                        <p>We made a full faith effort to objectively categorize each quote into a specific theme</p>
+                        <br/>
+                        <h5>How is the score for each applause calculated?</h5>
+                        <p>The score for an applause is based on its loudness and its duration. In particular:</p>
+                        <h5 style="font-size: 1.5em; margin-left: 3em;">score = <sup>loudness</sup>&frasl;<sub>( duration )<sup>1.25</sup></sub></h5>
+                        <br/>
+                        <h5>Is this an objective measurement of Congress's reaction to President Trump's speech?</h5>
+                        <p>No. While we're confident in our analysis, all work and conclusions documented here are based around a single hour of content. Please consider this as a thought experiment where aesthetics and analysis meet Enjoy!.</p>
+                </div>
+                <h4 onclick="$( '#share').toggleClass( 'hidden');">Share</h4>
+                <div id="share" class="hidden">
+                    <ul>
+                        <li><a href="https://twitter.com/intent/tweet?original_referer=http://makeitmobile.co&text=Visualize: President Trump's February speech to Congress&url=http://makeitmobile.co/trump">Twitter</a></li>
+                        <li id="facebook"><a href="">Facebook</a></li>
+                        <li><a href="mailto:?subject=Congress 'Applauds' President Trump&body=http://makeitmobile.co/trump">Email</a></li>
+                    </ul>
+                </div>
+                <h4 onclick="$( '#contact-us').toggleClass( 'hidden');"><a href="mailto:?&subject=Let's Talk">Contact</a></h4>
               </section>
           </div>
         </div>
@@ -369,6 +414,10 @@
 
          $( document).ready( function() {
 
+            $( "#example-img").on( "click", function( event) {
+                      event.preventDefault();
+                      window.location = "https://i.imgur.com/CfdFudi.gifv";
+              });
         });
     </script>
 </body>
