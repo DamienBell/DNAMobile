@@ -97,7 +97,8 @@
           }
 
           .modal-container {
-            width: 92%;
+              /* 480px * .75 */
+              min-width: 360px;
             max-height: 98vh;
             overflow: scroll;
             margin: 0px auto;
@@ -178,11 +179,7 @@
             -webkit-transform: scale(1.1);
             transform: scale(1.1);
           }
-
-          .quotes{
-            /*max-height: 80vh;
-            overflow: scroll;*/
-          }
+        
           .quotes blockquote{
             font-size: smaller;
             padding: 2px 10px;
@@ -324,7 +321,7 @@
           <div slot="body">
             <div class="row">
               <div class="col-sm-12">
-                <share-component subject="Visualize: President Trump's February speech to Congress"></share-component>
+                <share-component subject="Congress 'Applauds' President Trump"></share-component>
               </div>
             </div>
           </div>
