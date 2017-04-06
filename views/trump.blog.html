@@ -110,13 +110,13 @@
           }
 
           .small-modal .modal-container{
-            width: 50%;
-            max-width: 300px;
-            min-width: 200px;
+            width: 60%;
           }
+
 
           .modal-header h3 {
             margin-top: 0;
+            margin-bottom: 0;
             color: #42b983;
           }
 
@@ -124,14 +124,18 @@
                 width: 85%;
                 margin: auto;
                 text-align: center;
-                /*background: #000;
-                color: #fff;*/
             }
 
           .modal-body {
             margin: 0 0 0 0;
             padding: 0 15px;
           }
+        
+        .modal-body .row {
+            padding: 1em;
+        }
+        
+        
 
           /*
            * The following styles are auto-applied to elements with
@@ -212,18 +216,6 @@
             text-decoration: underline;
         }
 
-        .button {
-            border: 1px solid black;
-            background-color: black;
-            color: white;
-            text-align: center;
-            font-family: Roboto, Helvetica, Arial, sans-serif;
-            width: 80%;
-            margin-top: 1em;
-            padding: 0.5em;
-            font-size: 1em;
-        }
-
         .hidden {
             display: none;
         }
@@ -289,14 +281,7 @@
                         <h5>Is this an objective measurement of Congress's reaction to President Trump's speech?</h5>
                         <p>No. While we're confident in our analysis, all work and conclusions documented here are based around a single hour of content. Please consider this as a thought experiment where aesthetics and analysis meet Enjoy!.</p>
                 </div>
-                <h4 onclick="$( '#share').toggleClass( 'hidden');">Share</h4>
-                <div id="share" class="hidden">
-                    <ul>
-                        <li><a href="https://twitter.com/intent/tweet?original_referer=http://makeitmobile.co&text=Visualize: President Trump's February speech to Congress&url=http://makeitmobile.co/trump">Twitter</a></li>
-                        <li id="facebook"><a href="">Facebook</a></li>
-                        <li><a href="mailto:?subject=Congress 'Applauds' President Trump&body=http://makeitmobile.co/trump">Email</a></li>
-                    </ul>
-                </div>
+                <h4 onclick=" ShareModal.showModal = true;">Share</h4>
                 <h4 onclick="$( '#contact-us').toggleClass( 'hidden');"><a href="mailto:?&subject=Let's Talk">Contact</a></h4>
               </section>
           </div>
@@ -335,7 +320,7 @@
       <section id="share-modal">
         <!-- use the modal component, pass in the prop -->
         <modal class="small-modal" v-if="showModal" @close="showModal = false">
-          <h3 slot="header">Like this project?</h3>
+          <h3 slot="header">Like this project? Share it!</h3>
           <div slot="body">
             <div class="row">
               <div class="col-sm-12">
@@ -344,7 +329,6 @@
             </div>
           </div>
           <div slot="footer">
-            <p>Do Share :)</p>
           </div>
         </modal>
       </section>
