@@ -169,7 +169,7 @@ function didTapNode(d){
     totalTaps = totalTaps + 1;
     // haven't already requested
     if ( totalTaps === TapsToTrigger && !Cookies.get( "have-contacted")) {
-        ShareModal.show = true;
+        ShareModal.showModal = true;
         Cookies.set( "have-contacted")
     }
     else {
