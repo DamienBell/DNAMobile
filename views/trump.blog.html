@@ -236,7 +236,7 @@
                 <h4 onclick="$( '#how-to-read').toggleClass( 'hidden');">How to Read</h4>
                 <div id="how-to-read" class="hidden">
                     <p>At <span class="black">29% of all</span> Congressional <span style="color: black;">applause</span>, <span class="black" >Nationalism was the dominant theme of the night.</span></p>
-                    <p>The President alluded to this theme in 18 different occassions and Congress replied with 29% of all the applause it delivered that night.</p>
+                    <p>The President alluded to this theme on 18 different occassions and Congress replied with 29% of all the applause it delivered that night.</p>
                     
                     <img id="example-img" src="http://i.imgur.com/CfdFudi.gif" width="80%" height="80%">
                 </div>
@@ -364,6 +364,11 @@
                    }, function( response) {
                  });
              });
+                            
+            $( "#example-img").on( "click", function( event) {
+                      event.preventDefault();
+                      window.location = "https://i.imgur.com/CfdFudi.gifv";
+              });
         });
     </script>
 </body>
