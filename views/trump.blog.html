@@ -224,6 +224,7 @@
         .hidden {
             display: none;
         }
+
             </style>
     </head>
     <body>
@@ -240,7 +241,6 @@
                     </div>
                     <div id="static-share">
                       <share-component subject="Visualize: President Trump's February speech to Congress"></share-component>
-
                     </div>
                 </div>
             <section style="font-size: 1.25em;">
@@ -261,7 +261,6 @@
                 <div id="how-to-read" class="hidden">
                     <p>At <span class="black">29% of all</span> Congressional <span style="color: black;">applause</span>, <span class="black" >Nationalism was the dominant theme of the night.</span></p>
                     <p>The President alluded to this theme on 18 different occassions and Congress replied with 29% of all the applause it delivered that night.</p>
-
                     <img id="example-img" src="http://i.imgur.com/CfdFudi.gif" width="80%" height="80%">
                 </div>
                 <h4 onclick="$( '#questions').toggleClass( 'hidden');">Questions</h4>
@@ -376,9 +375,7 @@
               </div>
 
               <div class="modal-footer" @click="$emit('close')">
-                <slot name="footer">
-                  <!-- <h4 class="modal-default-button">OK</h4> -->
-                </slot>
+                <slot name="footer"></slot>
               </div>
             </div>
           </div>

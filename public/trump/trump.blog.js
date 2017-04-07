@@ -60,6 +60,38 @@ Vue.component('share-component', {
 
 });
 
+Vue.component('how-to-component', {
+  template: `<div class="center-text row">
+              <div class="col-xs-3" v-on:click.stop="showHowGif">
+                <h4>How to Read<h4>
+              </div>
+              <div class="col-xs-3" v-on:click.stop="showHowGif">
+                <h4>FAQ<h4>
+              </div>
+              <div class="col-xs-3" v-on:click.stop="showHowGif">
+                <h4>Share<h4>
+              </div>
+              <div class="col-xs-3" v-on:click.stop="showHowGif">
+                <h4>Contact<h4>
+              </div>
+              <div class="active-how-to">
+                <div id="how-to-read">
+                    <p>At <span class="black">29% of all</span> Congressional <span style="color: black;">applause</span>, <span class="black" >Nationalism was the dominant theme of the night.</span></p>
+                    <p>The President alluded to this theme on 18 different occassions and Congress replied with 29% of all the applause it delivered that night.</p>
+                    <img id="example-img" src="http://i.imgur.com/CfdFudi.gif" width="80%" height="80%">
+                </div>
+              </div>
+            </div>`,
+  props: {
+    showHow: Boolean,
+    showFAQ: Boolean,
+  },
+  methods: {
+    showHowGif: function(){
+      console.log('showHowGif')
+    }
+  }
+});
 
 var ShareModal = new Vue({
   el: '#share-modal',
@@ -124,13 +156,9 @@ var InfoModal = new Vue({
   }
 });
 
-let shareInfo = {
-  subject: "Visualize: President Trump's February speech to Congress"
-}
-var s  = new Vue({
-  el: '#static-share',
-  data: shareInfo
-});
+// new Vue({
+//   el: "#how-to"
+// });
 
 //populate from categories.json
 var children = [];
@@ -154,6 +182,7 @@ let TapsToTrigger = 3;
 var totalTaps = 0;
 
 function expandNodeDetails(node){
+
   let $elem      = $(node.node());
   let background = $elem[0].style.background
   let position   = $elem.position()
