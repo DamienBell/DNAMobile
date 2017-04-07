@@ -2,7 +2,7 @@
 <html lang="en" style="height:100%;">
     <head>
         <meta charset="utf-8">
-        <title>Make it Mobile</title>
+        <title>Congress 'Applauds' President Trump | Make it Mobile</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="keywords" content="" />
         <meta name="description" content="" />
@@ -25,6 +25,16 @@
 
 
         <link rel="shortcut icon" href="ico/favicon.png">
+        <!-- Analytics -->
+        <script type="text/javascript">
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+             })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+             ga('create', 'UA-96902137-1', 'auto');
+             ga('send', 'pageview');
+        </script>
         <style>
             #chart-container {
                 margin: auto;
@@ -97,7 +107,8 @@
           }
 
           .modal-container {
-            width: 92%;
+              /* 480px * .75 */
+              min-width: 360px;
             max-height: 98vh;
             overflow: scroll;
             margin: 0px auto;
@@ -110,13 +121,13 @@
           }
 
           .small-modal .modal-container{
-            width: 50%;
-            max-width: 300px;
-            min-width: 200px;
+            width: 60%;
           }
+
 
           .modal-header h3 {
             margin-top: 0;
+            margin-bottom: 0;
             color: #42b983;
           }
 
@@ -124,13 +135,18 @@
                 width: 85%;
                 margin: auto;
                 text-align: center;
-                /*background: #000;
-                color: #fff;*/
             }
 
           .modal-body {
-            margin: 20px 0;
+            margin: 0 0 0 0;
+            padding: 0 15px;
           }
+
+        .modal-body .row {
+            padding: 1em;
+        }
+
+
 
           /*
            * The following styles are auto-applied to elements with
@@ -147,13 +163,15 @@
             margin: auto;
             display: inline-block;
             padding: 0;
+            margin-bottom: 1em;
           }
           .social-share li{
             cursor: pointer;
-            width: 36px;
+            width: 1.5em;
+            height: 1.5em;
             display: block;
             float: left;
-            margin: 8px;
+            margin: 0.5em 1.5em;
           }
           .social-share img{
            max-width: 100%;
@@ -172,10 +190,6 @@
             transform: scale(1.1);
           }
 
-          .quotes{
-            /*max-height: 80vh;
-            overflow: scroll;*/
-          }
           .quotes blockquote{
             font-size: smaller;
             padding: 2px 10px;
@@ -209,23 +223,21 @@
             text-decoration: underline;
         }
 
-        .button {
-            border: 1px solid black;
-            background-color: black;
-            color: white;
-            text-align: center;
-            font-family: Roboto, Helvetica, Arial, sans-serif;
-            width: 80%;
-            margin-top: 1em;
-            padding: 0.5em;
-            font-size: 1em;
-        }
-
         .hidden {
             display: none;
         }
 
-            </style>
+        /* user-agent override */
+        hr {
+            -webkit-margin-before: 0.5em;
+            -webkit-margin-after: 2em;
+        }
+
+        .underlined-title {
+            margin-top: 0.5em;
+            padding: 0;
+        }
+    </style>
     </head>
     <body>
 
@@ -237,7 +249,7 @@
                     <div class="underlined-title">
                         <h2><span class="aqua">Make</span> It <span class="aqua">Mobile</span></h2>
                         <hr>
-                        <h3>Applause as Feedback</h3>
+                        <h3>Congress 'Applauds' President Trump</h3>
                     </div>
                     <div id="static-share">
                       <share-component subject="Visualize: President Trump's February speech to Congress"></share-component>
@@ -275,14 +287,7 @@
                         <h5>Is this an objective measurement of Congress's reaction to President Trump's speech?</h5>
                         <p>No. While we're confident in our analysis, all work and conclusions documented here are based around a single hour of content. Please consider this as a thought experiment where aesthetics and analysis meet Enjoy!.</p>
                 </div>
-                <h4 onclick="$( '#share').toggleClass( 'hidden');">Share</h4>
-                <div id="share" class="hidden">
-                    <ul>
-                        <li><a href="https://twitter.com/intent/tweet?original_referer=http://makeitmobile.co&text=Visualize: President Trump's February speech to Congress&url=http://makeitmobile.co/trump">Twitter</a></li>
-                        <li id="facebook"><a href="">Facebook</a></li>
-                        <li><a href="mailto:?subject=Congress 'Applauds' President Trump&body=http://makeitmobile.co/trump">Email</a></li>
-                    </ul>
-                </div>
+                <h4 onclick=" ShareModal.showModal = true;">Share</h4>
                 <h4 onclick="$( '#contact-us').toggleClass( 'hidden');"><a href="mailto:?&subject=Let's Talk">Contact</a></h4>
               </section>
           </div>
@@ -300,17 +305,17 @@
           <h3 slot="header">{{info.category}}</h3>
           <div slot="body">
             <div class="row">
-              <div class="col-sm-4">
-                  <h4>{{info.count}} Quotes</h4>
+              <div class="col-sm-6">
+                  <h3>{{info.count}} Quotes</h3>
               </div>
-              <div class="col-sm-4">
-                <h4>{{percent}}% of all Feedback</h4>
+              <div class="col-sm-6">
+                <h3>{{percent}}% of all Applause</h3>
               </div>
             </div>
             <div class="quotes">
               <ul>
                 <li v-for="item in info.related">
-                    <blockquote>"{{item.quote}}""</blockquote>
+                    <blockquote>"{{item.quote}}"</blockquote>
                 </li>
               </ul>
             </div>
@@ -321,16 +326,15 @@
       <section id="share-modal">
         <!-- use the modal component, pass in the prop -->
         <modal class="small-modal" v-if="showModal" @close="showModal = false">
-          <h3 slot="header">Like this project?</h3>
+          <h3 slot="header">Like this project? Share it!</h3>
           <div slot="body">
             <div class="row">
               <div class="col-sm-12">
-                <share-component subject="Visualize: President Trump's February speech to Congress"></share-component>
+                <share-component subject="Congress 'Applauds' President Trump"></share-component>
               </div>
             </div>
           </div>
           <div slot="footer">
-            <p>Do Share :)</p>
           </div>
         </modal>
       </section>
